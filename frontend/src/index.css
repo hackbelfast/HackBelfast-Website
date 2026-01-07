@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-950 text-white font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-hack-gradient text-white font-bold rounded-lg hover:scale-105 transition-transform duration-200 shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-hack-pink text-white font-bold rounded-lg hover:bg-hack-pink hover:scale-105 transition-all duration-200;
+  }
+
+  .gradient-text {
+    @apply bg-hack-gradient bg-clip-text text-transparent;
+  }
+
+  .card {
+    @apply bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-hack-pink transition-all duration-300;
+  }
+}
