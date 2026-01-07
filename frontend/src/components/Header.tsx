@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import { useState } from 'react'
-import logo from '../assets/HackBelfast_logo.png'
+import logo from '../assets/HackBelfast_logo.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)

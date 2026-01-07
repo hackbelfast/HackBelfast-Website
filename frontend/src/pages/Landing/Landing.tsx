@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import CountdownTimer from './components/Countdown'
 import TrackCard from './components/Tracks'
-import logo from "../../assets/HackBelfast_logo.png"
+import logo from "../../assets/HackBelfast_logo.png";
 
 const Landing = () => {
   const tracks = [

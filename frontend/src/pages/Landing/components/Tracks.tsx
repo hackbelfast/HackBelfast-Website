@@ -1,5 +1,5 @@
 interface TrackCardProps {
-  icon: string
+  icon: React.ReactNode
   title: string
   description: string
   gradient: string
