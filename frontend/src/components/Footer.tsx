@@ -46,8 +46,8 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Event Details</h4>
             <p className="text-gray-400 text-sm mb-4">
-              📅 14-15 February 2026<br/>
-              📍 Belfast, Northern Ireland<br/>
+              14-15 February 2026<br/>
+              📍 Queen's University Belfast, Northern Ireland<br/>
               ⏱️ 24-36 Hour Hackathon
             </p>
 

@@ -1,35 +1,56 @@
 import { Link } from 'react-router-dom'
 import CountdownTimer from './components/Countdown'
 import TrackCard from './components/Tracks'
+import logo from "../../assets/HackBelfast_logo.png"
 
 const Landing = () => {
   const tracks = [
     {
-      icon: '💰',
+      icon: (
+        <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
       title: 'Finance/Fintech',
       description: 'Build innovative financial technology solutions, from payment systems to trading platforms to personal finance apps.',
       gradient: 'from-yellow-400 to-orange-500'
     },
     {
-      icon: '🎨',
+      icon: (
+        <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+      ),
       title: 'Non-Technical Track',
       description: 'Using no-code and AI tools such as Lovable, perfect for students from all backgrounds to get involved and build without writing a single line of code.',
       gradient: 'from-orange-500 to-pink-500'
     },
     {
-      icon: '🤖',
+      icon: (
+        <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      ),
       title: 'AI & Machine Learning',
       description: 'Harness the power of artificial intelligence, LLMs, computer vision, and NLP to create intelligent applications that solve real-world problems.',
       gradient: 'from-pink-500 to-purple-500'
     },
     {
-      icon: '🏥',
+      icon: (
+        <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
+      ),
       title: 'MedTech',
       description: 'Innovate in healthcare technology with solutions for patient care, diagnostics, health monitoring, and medical data management.',
       gradient: 'from-purple-500 to-indigo-500'
     },
     {
-      icon: '🌱',
+      icon: (
+        <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
       title: 'Sustainability',
       description: 'Create solutions addressing climate change, renewable energy, waste management, or environmental conservation for a sustainable future.',
       gradient: 'from-green-400 to-emerald-500'
@@ -43,13 +64,17 @@ const Landing = () => {
         {/* Animated background blobs */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-yellow-500/20 via-orange-500/20 to-pink-500/20 blur-3xl animate-pulse" />
-          <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-pink-500/20 via-purple-500/20 to-indigo-500/20 blur-3xl animate-pulse delay-1000" />
+          <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-pink-500/20 via-purple-500/20 to-indigo-500/20 blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         </div>
 
         <div className="relative z-10 text-center max-w-5xl mx-auto">
-          {/* Logo placeholder - you can replace with actual logo */}
+          {/* Logo */}
           <div className="mb-8 flex justify-center">
-            <div className="text-8xl md:text-9xl">🚀</div>
+            <img 
+              src={logo} 
+              alt="HackBelfast Logo" 
+              className="h-32 md:h-40 w-auto"
+            />
           </div>
 
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6">
@@ -68,10 +93,10 @@ const Landing = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Link
-              to="/register"
+              to="/auth"
               className="px-8 py-4 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 text-white font-bold rounded-lg hover:scale-105 transition-transform duration-200 shadow-lg text-lg"
             >
-              Register Now 🎯
+              Register Now
             </Link>
             <Link
               to="/tracks"
@@ -84,25 +109,45 @@ const Landing = () => {
           {/* Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
             <div className="bg-gray-900/50 backdrop-blur border border-gray-800 rounded-lg p-4">
-              <div className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+              <div className="flex justify-center mb-2">
+                <svg className="w-8 h-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                 24-36hrs
               </div>
               <div className="text-sm text-gray-400">Duration</div>
             </div>
             <div className="bg-gray-900/50 backdrop-blur border border-gray-800 rounded-lg p-4">
-              <div className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
+              <div className="flex justify-center mb-2">
+                <svg className="w-8 h-8 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
                 5
               </div>
               <div className="text-sm text-gray-400">Tracks</div>
             </div>
             <div className="bg-gray-900/50 backdrop-blur border border-gray-800 rounded-lg p-4">
-              <div className="text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+              <div className="flex justify-center mb-2">
+                <svg className="w-8 h-8 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <div className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
                 200+
               </div>
               <div className="text-sm text-gray-400">Participants</div>
             </div>
             <div className="bg-gray-900/50 backdrop-blur border border-gray-800 rounded-lg p-4">
-              <div className="text-3xl font-bold bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent">
+              <div className="flex justify-center mb-2">
+                <svg className="w-8 h-8 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <div className="text-2xl font-bold bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent">
                 10+
               </div>
               <div className="text-sm text-gray-400">Universities</div>
@@ -138,26 +183,38 @@ const Landing = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            <div className="bg-gray-900 border border-gray-800 rounded-xl p-6">
-              <div className="text-4xl mb-4">🎯</div>
-              <h3 className="text-xl font-bold mb-3">General Focus</h3>
-              <p className="text-gray-400">
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-pink-500/50 transition-colors">
+              <div className="flex justify-center mb-4">
+                <svg className="w-12 h-12 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">General Focus</h3>
+              <p className="text-gray-400 text-center">
                 Unlike niche hackathons, we welcome diverse projects to maximize participation and encourage innovation across multiple domains.
               </p>
             </div>
 
-            <div className="bg-gray-900 border border-gray-800 rounded-xl p-6">
-              <div className="text-4xl mb-4">👥</div>
-              <h3 className="text-xl font-bold mb-3">Cross-University</h3>
-              <p className="text-gray-400">
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-pink-500/50 transition-colors">
+              <div className="flex justify-center mb-4">
+                <svg className="w-12 h-12 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Cross-University</h3>
+              <p className="text-gray-400 text-center">
                 Connect with talented students from universities across Ireland, forming teams with diverse perspectives and skills.
               </p>
             </div>
 
-            <div className="bg-gray-900 border border-gray-800 rounded-xl p-6">
-              <div className="text-4xl mb-4">🏆</div>
-              <h3 className="text-xl font-bold mb-3">VCIC-Style Judging</h3>
-              <p className="text-gray-400">
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-pink-500/50 transition-colors">
+              <div className="flex justify-center mb-4">
+                <svg className="w-12 h-12 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">VCIC-Style Judging</h3>
+              <p className="text-gray-400 text-center">
                 Professional judging inspired by Venture Capital Investment Competition, with multiple rounds evaluating technical execution and business viability.
               </p>
             </div>
@@ -211,9 +268,12 @@ const Landing = () => {
           </p>
           <Link
             to="/register"
-            className="inline-block px-10 py-4 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 text-white text-lg font-bold rounded-lg hover:scale-105 transition-transform duration-200 shadow-lg"
+            className="inline-flex items-center gap-2 px-10 py-4 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 text-white text-lg font-bold rounded-lg hover:scale-105 transition-transform duration-200 shadow-lg"
           >
-            Register Your Team 🚀
+            <span>Register Your Team</span>
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
           </Link>
           <p className="text-gray-500 mt-6 text-sm">
             Registration closes on 10th February 2026
