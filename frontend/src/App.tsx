@@ -4,6 +4,8 @@ import Landing from './pages/Landing/Landing'
 import Tracks from './pages/Tracks/Tracks'
 import Judging from './pages/Judging/Judging'
 
+import Auth from './pages/Auth/Auth'
+
 import NotFound from "./pages/Errors/404"
 import Forbidden from "./pages/Errors/403"
 import ServerError from "./pages/Errors/500"
@@ -17,6 +19,7 @@ export default function App() {
               <Route index element={<Landing />} />
               <Route path='tracks' element={<Tracks />} />
               <Route path='judging' element={<Judging />} />
+              <Route path='auth' element={<Auth />} />
             </Route>
 
             {/* Error pages */}
