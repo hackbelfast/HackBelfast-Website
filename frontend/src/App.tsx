@@ -3,7 +3,10 @@ import Layout from "./components/Layout"
 import Landing from './pages/Landing/Landing'
 import Tracks from './pages/Tracks/Tracks'
 
-import NotFound from "./pages/404"
+import NotFound from "./pages/Errors/404"
+import Forbidden from "./pages/Errors/403"
+import ServerError from "./pages/Errors/500"
+import Teapot from "./pages/Errors/418"
 
 export default function App() {
   return (
@@ -14,7 +17,12 @@ export default function App() {
               <Route path='tracks' element={<Tracks />} />
             </Route>
 
-            <Route path="*" element={<NotFound />} />
+            {/* Error pages */}
+          <Route path="/403" element={<Forbidden />} />
+          <Route path="/500" element={<ServerError />} />
+          <Route path="/418" element={<Teapot />} />
+
+          <Route path="*" element={<NotFound />} />
 
           </Routes>
     </Router>
