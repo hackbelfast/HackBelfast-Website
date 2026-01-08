@@ -46,7 +46,7 @@ const Header = () => {
           ))}
 
           <NavLink
-            to="/register"
+            to="/auth"
             className="rounded-lg bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 px-4 py-2 text-sm font-semibold text-white shadow-md hover:scale-105 transition-transform"
           >
             Register
@@ -95,7 +95,7 @@ const Header = () => {
               </NavLink>
             ))}
             <NavLink
-              to="/register"
+              to="/auth"
               onClick={() => setMenuOpen(false)}
               className="mt-2 block rounded-md bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 px-3 py-2 text-center text-base font-semibold text-white"
             >
