@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from "./components/Layout"
 import Landing from './pages/Landing/Landing'
 import Tracks from './pages/Tracks/Tracks'
+import Judging from './pages/Judging/Judging'
 
 import NotFound from "./pages/Errors/404"
 import Forbidden from "./pages/Errors/403"
@@ -15,6 +16,7 @@ export default function App() {
             <Route path="/" element={<Layout />}>
               <Route index element={<Landing />} />
               <Route path='tracks' element={<Tracks />} />
+              <Route path='judging' element={<Judging />} />
             </Route>
 
             {/* Error pages */}
