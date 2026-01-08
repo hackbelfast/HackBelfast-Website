@@ -8,6 +8,7 @@ const Header = () => {
   const isHome = location.pathname === '/'
 
   const navItems = [
+    { path: '/about', label: 'About'},
     { path: '/tracks', label: 'Tracks' },
     { path: '/judging', label: 'Judging' },
   ]

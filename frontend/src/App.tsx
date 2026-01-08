@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import About from "./pages/About/About"
 import Layout from "./components/Layout"
 import Landing from './pages/Landing/Landing'
 import Tracks from './pages/Tracks/Tracks'
@@ -17,6 +18,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Landing />} />
+              <Route path='about' element={<About />} />
               <Route path='tracks' element={<Tracks />} />
               <Route path='judging' element={<Judging />} />
               <Route path='auth' element={<Auth />} />
