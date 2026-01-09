@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Nazzal from "../../assets/team/Nazzal.png"
 import Raj from "../../assets/team/Raj.png"
-//import Abdul from "../../assets/team/Abdul.png"
+// import Abdul from "../../assets/team/Abdul.png"
 
 const About = () => {
   const teamMembers = [
@@ -9,21 +9,21 @@ const About = () => {
       name: 'Ahmed Nazzal',
       role: 'Lead Organiser',
       university: "Queen's University Belfast",
-      image: {Nazzal},
+      image: Nazzal,
       linkedin: 'https://www.linkedin.com/in/a-nazzal/',
     },
     {
       name: "Raj Aryan Upadhyaya",
       role: 'Tech Lead',
       university: "Trinity College Dublin",
-      image: {Raj},
+      image: Raj,
       linkedin: 'https://linkedin.com/in/raupadhyaya04',
     },
     {
       name: "Abdulrahman Dessisa",
       role: 'Marketing Lead',
       university: "Queen's University Belfast",
-      //image: {Abdul},
+      //image: Abdul,
       linkedin: 'https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/',
     },
   ]
@@ -189,12 +189,20 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="group bg-gray-900 border border-gray-800 rounded-xl overflow-hidden hover:border-pink-500/30 transition-all">
-                {/* Profile Image - Placeholder */}
+                {/* Profile Image */}
                 <div className="aspect-square bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-500 p-[2px]">
                   <div className="w-full h-full bg-gray-900 flex items-center justify-center">
-                    <div className="text-6xl font-bold text-gray-700">
-                      {member.name.split(' ').map(n => n[0]).join('')}
-                    </div>
+                    {member.image ? (
+                      <img 
+                        src={member.image} 
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="text-6xl font-bold text-gray-700">
+                        {member.name.split(' ').map(n => n[0]).join('')}
+                      </div>
+                    )}
                   </div>
                 </div>
 
