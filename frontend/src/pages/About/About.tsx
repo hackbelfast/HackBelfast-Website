@@ -115,7 +115,7 @@ const About = () => {
               </ul>
               <p className="text-gray-300 mt-3">
                 This cross-border, cross-discipline collaboration brings together finance and tech expertise 
-                to create Ireland's most innovative student hackathon.
+                to create Northern Ireland's most innovative student hackathon.
               </p>
             </div>
           </div>

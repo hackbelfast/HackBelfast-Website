@@ -88,7 +88,7 @@ const Landing = () => {
           </p>
 
           <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-            Ireland's premier hackathon bringing together students from across the island for 24-36 hours of innovation, collaboration, and competition.
+            Northern Ireland's biggest hackathon bringing together students from across the island for 24-36 hours of innovation, collaboration, and competition.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -176,7 +176,7 @@ const Landing = () => {
               What is <span className="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">HackBelfast?</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              We are planning to organize a hackathon in Belfast, bringing together students from across Ireland. 
+              We are planning to organize a hackathon in Belfast, bringing together students from across the island of Ireland. 
               The hackathon will be general rather than niche-focused to appeal to a wider audience, 
               with 4-5 different tracks so students from different backgrounds and interests can get involved.
             </p>
