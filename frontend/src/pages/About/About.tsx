@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom'
+import Nazzal from "../../assets/team/Nazzal.png"
+import Raj from "../../assets/team/Raj.png"
+//import Abdul from "../../assets/team/Abdul.png"
 
 const About = () => {
   const teamMembers = [
@@ -6,17 +9,23 @@ const About = () => {
       name: 'Ahmed Nazzal',
       role: 'Lead Organiser',
       university: "Queen's University Belfast",
-      image: '/team/conor.jpg', // Replace with actual images
-      linkedin: 'https://linkedin.com/in/conormckenna',
+      image: {Nazzal},
+      linkedin: 'https://www.linkedin.com/in/a-nazzal/',
     },
     {
       name: "Raj Aryan Upadhyaya",
       role: 'Tech Lead',
       university: "Trinity College Dublin",
-      image: '/team/sarah.jpg',
+      image: {Raj},
       linkedin: 'https://linkedin.com/in/raupadhyaya04',
     },
-    // We will add more team members
+    {
+      name: "Abdulrahman Dessisa",
+      role: 'Marketing Lead',
+      university: "Queen's University Belfast",
+      //image: {Abdul},
+      linkedin: 'https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/',
+    },
   ]
 
   const stats = [
