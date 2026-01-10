@@ -35,26 +35,6 @@ const tracks: Track[] = [
     vcicNote: true,
   },
   {
-    id: 'nocode',
-    title: 'Non-Technical (No-Code & AI)',
-    gradient: 'from-orange-500 to-pink-500',
-    description:
-      'Create powerful applications without writing a single line of code using modern no‑code and AI tools.',
-    longDescription:
-      'This track is designed for entrepreneurs, designers, and students from non-technical backgrounds. Using no-code platforms and AI tools such as Lovable, you can build production-ready products without touching traditional code.',
-    examples: [
-      'Startup MVPs built with no-code tools',
-      'Business automation workflows',
-      'Internal tools and dashboards',
-      'E‑commerce or booking platforms',
-      'AI‑assisted content and marketing tools',
-      'Community or education platforms',
-    ],
-    tools: ['Lovable', 'Bubble', 'Webflow', 'Zapier', 'Airtable', 'Notion'],
-    prizes:
-      'Winners receive no‑code/AI tool credits and 1:1 product sessions to take their MVP to the next stage.',
-  },
-  {
     id: 'ai',
     title: 'AI & Machine Learning',
     gradient: 'from-pink-500 to-purple-500',
