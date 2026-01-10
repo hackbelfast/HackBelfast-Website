@@ -11,7 +11,7 @@ const Footer = () => {
               HackBelfast
             </h3>
             <p className="text-gray-400 text-sm">
-              Ireland's premier hackathon bringing together innovators from across the island.
+              Northern Ireland's premier hackathon bringing together innovators from across the island.
             </p>
           </div>
 
