@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import CountdownTimer from './components/Countdown'
 import TrackCard from './components/Tracks'
 import logo from "../../assets/HackBelfast_logo.png";
+import FAQs from "./components/FAQ"
 
 const Landing = () => {
   const tracks = [
@@ -256,6 +257,8 @@ const Landing = () => {
           </div>
         </div>
       </section>
+
+      <FAQs />
 
       {/* CTA Section */}
       <section className="py-20 px-4">
