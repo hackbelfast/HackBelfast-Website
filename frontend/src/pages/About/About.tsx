@@ -13,6 +13,13 @@ const About = () => {
       linkedin: 'https://www.linkedin.com/in/a-nazzal/',
     },
     {
+      name: "Abdulrahman Dessisa",
+      role: 'Marketing Lead',
+      university: "Queen's University Belfast",
+      //image: Abdul,
+      linkedin: 'https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/',
+    },
+    {
       name: "Raj Aryan Upadhyaya",
       role: 'Tech Lead',
       university: "Trinity College Dublin",
@@ -20,11 +27,11 @@ const About = () => {
       linkedin: 'https://linkedin.com/in/raupadhyaya04',
     },
     {
-      name: "Abdulrahman Dessisa",
-      role: 'Marketing Lead',
+      name: "Caitlin O'Neill",
+      role: 'Logistics Lead',
       university: "Queen's University Belfast",
-      //image: Abdul,
-      linkedin: 'https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/',
+      //image: Caitlin,
+      linkedin: 'https://www.linkedin.com/in/',
     },
   ]
 
@@ -111,6 +118,12 @@ const About = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span><strong className="text-yellow-300">Queen's Computing Society</strong> - The tech community at Queen's University Belfast</span>
+                </li>
+              <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span><strong className="text-yellow-300">Queen's Data Science & AI Society</strong> - The data-driven community at Queen's University Belfast</span>
                 </li>
               </ul>
               <p className="text-gray-300 mt-3">
