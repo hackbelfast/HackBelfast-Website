@@ -17,8 +17,8 @@ const tracks: Track[] = [
   {
     id: 'fintech',
     icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
     title: 'Finance/Fintech',
@@ -42,8 +42,8 @@ const tracks: Track[] = [
   {
     id: 'ai',
     icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
     title: 'AI & Machine Learning',
@@ -65,8 +65,8 @@ const tracks: Track[] = [
   {
     id: 'medtech',
     icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+      <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
       </svg>
     ),
     title: 'MedTech',
@@ -89,8 +89,8 @@ const tracks: Track[] = [
   {
     id: 'sustainability',
     icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
     title: 'Sustainability',
@@ -157,9 +157,7 @@ const Tracks = () => {
             >
               {/* Icon and Title */}
               <div className="flex items-start gap-4 mb-4">
-                <div className={`text-transparent bg-gradient-to-r ${track.gradient} bg-clip-text`}>
-                  {track.icon}
-                </div>
+                {track.icon}
                 <div className="flex-1">
                   <h2 className={`text-3xl font-bold mb-2 bg-gradient-to-r ${track.gradient} text-transparent bg-clip-text`}>
                     {track.title}
@@ -207,19 +205,6 @@ const Tracks = () => {
                 <p className="text-gray-400">{track.prizes}</p>
               </div>
 
-              {/* VCIC Note for Fintech */}
-              {track.vcicNote && (
-                <div className="mt-6 bg-gradient-to-r from-yellow-900/30 to-orange-900/30 border border-yellow-700/50 rounded-lg p-4">
-                  <p className="text-yellow-200/90 text-sm leading-relaxed">
-                    <strong>💼 VCIC-Style Judging:</strong> Fintech teams will be evaluated using a VCIC‑inspired framework 
-                    that looks at both technical execution and investment readiness. If you want to understand how judges 
-                    think like venture capitalists, you should review the judging rubric in advance.
-                    <Link to="/vcic" className="text-yellow-300 hover:text-yellow-200 ml-2 underline">
-                      Learn more about VCIC‑style judging
-                    </Link>
-                  </p>
-                </div>
-              )}
             </div>
           ))}
         </div>
@@ -227,18 +212,21 @@ const Tracks = () => {
         {/* Additional Prizes Section */}
         <div className="bg-gradient-to-br from-slate-900/50 to-slate-800/50 rounded-2xl p-8 backdrop-blur-sm border border-slate-700/50 mb-16">
           <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-pink-400 text-transparent bg-clip-text">
-            🏆 Special Prize Categories
+            Special Prize Categories
           </h2>
           <p className="text-gray-300 mb-4">
             In addition to track-specific prizes, we're awarding special recognition for:
           </p>
           <div className="space-y-4">
             <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
-              <h3 className="text-xl font-semibold text-purple-300 mb-2">🛠️ Best Use of No-Code Tools</h3>
-              <p className="text-gray-400">
-                Awarded to the team that best leverages no-code and AI-powered tools (like Lovable, Bubble, Webflow, etc.) 
-                to build a functional product. Perfect for non-technical students or teams wanting to move fast!
-              </p>
+            <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+            <h3 className="text-xl font-semibold text-purple-300 mb-2"> Best Use of No-Code Tools</h3>
+            <p className="text-gray-400">
+              Awarded to the team that best leverages no-code and AI-powered tools (like Lovable, Budibase, Webflow, etc.) 
+              to build a functional product. Perfect for non-technical students or teams wanting to move fast!
+            </p>
             </div>
           </div>
         </div>
