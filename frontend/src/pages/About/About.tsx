@@ -37,7 +37,7 @@ const About = () => {
 
   const stats = [
     { number: '200+', label: 'Participants' },
-    { number: '48', label: 'Hours of Hacking' },
+    { number: '36', label: 'Hours of Hacking' },
     { number: '£15K+', label: 'in Prizes' },
     { number: '20+', label: 'Sponsors & Partners' },
   ]

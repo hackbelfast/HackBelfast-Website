@@ -19,16 +19,6 @@ const Landing = () => {
     {
       icon: (
         <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-        </svg>
-      ),
-      title: 'Non-Technical Track',
-      description: 'Using no-code and AI tools such as Lovable, perfect for students from all backgrounds to get involved and build without writing a single line of code.',
-      gradient: 'from-orange-500 to-pink-500'
-    },
-    {
-      icon: (
-        <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
@@ -224,39 +214,95 @@ const Landing = () => {
       </section>
 
       {/* Tracks Section */}
-      <section className="py-20 px-4 bg-gray-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Choose Your <span className="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">Track</span>
-            </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Pick the track that matches your interests and skills. Each track has dedicated mentors, resources, and prizes!
-            </p>
-          </div>
+      <div className="container mx-auto px-4 py-20">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 text-transparent bg-clip-text">
+            Choose Your Track
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            Pick the track that matches your interests and skills. Each track has dedicated mentors, resources, and prizes!
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {tracks.map((track, index) => (
+            <TrackCard key={index} {...track} />
+          ))}
+        </div>
+        <div className="text-center">
+          <Link
+            to="/tracks"
+            className="inline-flex items-center gap-2 text-purple-300 hover:text-purple-200 transition-colors text-lg font-semibold"
+          >
+            Learn More About Tracks
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
+        </div>
+      </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {tracks.map((track, index) => (
-              <TrackCard
-                key={index}
-                icon={track.icon}
-                title={track.title}
-                description={track.description}
-                gradient={track.gradient}
-              />
-            ))}
-          </div>
+      {/* VCIC Callout Section for Finance Students */}
+      <div className="container mx-auto px-4 py-20">
+        <div className="max-w-5xl mx-auto">
+          <div className="relative bg-gradient-to-br from-yellow-900/30 via-orange-900/30 to-amber-900/30 rounded-3xl p-12 border-2 border-yellow-500/40 backdrop-blur-sm overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl"></div>
 
-          <div className="text-center">
-            <Link
-              to="/tracks"
-              className="inline-block px-8 py-4 border-2 border-purple-500 text-white font-bold rounded-lg hover:bg-purple-500/10 hover:scale-105 transition-all duration-200"
-            >
-              Learn More About Tracks →
-            </Link>
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 mb-6">
+                <svg className="w-12 h-12 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-300 to-orange-300 text-transparent bg-clip-text">
+                  Finance Students: Special Track
+                </h2>
+              </div>
+
+              <p className="text-xl text-yellow-100/90 mb-6 leading-relaxed">
+                If you're competing, you'll experience a unique judging format 
+                inspired by the <strong>Venture Capital Investment Competition (VCIC)</strong>.
+              </p>
+
+              <div className="bg-slate-900/40 rounded-xl p-6 mb-6 border border-yellow-700/30">
+                <h3 className="text-2xl font-bold text-yellow-300 mb-4">What's Different?</h3>
+                <ul className="space-y-3 text-gray-200">
+                  <li className="flex items-start gap-3">
+                    <span className="text-yellow-400 text-xl">•</span>
+                    <span>Judges will think like <strong>venture capitalists</strong>, evaluating both technical execution and investment potential</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-yellow-400 text-xl">•</span>
+                    <span>You'll pitch your project as a <strong>fundable startup</strong>, not just a prototype</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-yellow-400 text-xl">•</span>
+                    <span>Focus on <strong>market opportunity, business model, and scalability</strong> alongside your tech</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/vcic"
+                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-slate-900 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/50"
+                >
+                  Learn More About Judging
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+                <Link
+                  to="/tracks"
+                  className="inline-flex items-center justify-center gap-2 bg-slate-800/80 hover:bg-slate-700/80 text-yellow-300 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 border-2 border-yellow-500/30 hover:border-yellow-500/50"
+                >
+                  View All Tracks
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <FAQs />
 
