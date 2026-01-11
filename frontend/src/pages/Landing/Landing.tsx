@@ -79,7 +79,7 @@ const Landing = () => {
           </p>
 
           <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-            Northern Ireland's biggest hackathon bringing together students from across the island for 24-36 hours of innovation, collaboration, and competition.
+            Northern Ireland's biggest hackathon bringing together students from across the island for 36 hours of innovation, collaboration, and competition.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -106,7 +106,7 @@ const Landing = () => {
                 </svg>
               </div>
               <div className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                24-36hrs
+                36hrs
               </div>
               <div className="text-sm text-gray-400">Duration</div>
             </div>
@@ -117,7 +117,7 @@ const Landing = () => {
                 </svg>
               </div>
               <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
-                5
+                4
               </div>
               <div className="text-sm text-gray-400">Tracks</div>
             </div>
@@ -313,7 +313,7 @@ const Landing = () => {
             Ready to <span className="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">Build Something Amazing?</span>
           </h2>
           <p className="text-xl text-gray-400 mb-8">
-            Join us on 14-15 February 2026 for 24-36 hours of non-stop innovation, collaboration, and fun!
+            Join us on 14-15 February 2026 for 36 hours of non-stop innovation, collaboration, and fun!
           </p>
           <Link
             to="/register"
