@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 type FAQItem = {
   question: string;
@@ -10,20 +10,25 @@ const FAQ = () => {
 
   const faqs: FAQItem[] = [
     {
-      question: 'Do I need to know how to code?',
-      answer: "Nope! We've got a special prize for 'Best Use of No-Code Tools' - you can compete in any track using platforms like Lovable, Bubble, or Webflow. That said, if you want to code, go for it! We welcome everyone from complete beginners to seasoned devs.",
+      question: "Do I need to know how to code?",
+      answer:
+        "Nope! We've got a special prize for 'Best Use of No-Code Tools' - you can compete in any track using platforms like Lovable, Bubble, or Webflow. That said, if you want to code, go for it! We welcome everyone from complete beginners to seasoned devs.",
     },
     {
-      question: 'How long is the hackathon?',
-      answer: "The hackathon runs for 24-36 hours from 14-15 February 2026. You'll have the whole time to build, iterate, and polish your project before the final presentations and judging rounds.",
+      question: "How long is the hackathon?",
+      answer:
+        "The hackathon runs for 24-36 hours from 7-8 March 2026. You'll have the whole time to build, iterate, and polish your project before the final presentations and judging rounds.",
     },
     {
-      question: 'What are these tracks and do I need to be studying that to compete?',
-      answer: "Hell no! The tracks (Fintech, AI/ML, MedTech, Sustainability) are just themes to help you focus. You don't need to be studying finance to build a fintech app or studying medicine to do MedTech. Pick the problem domain that excites you most - we'll provide mentors and resources to help you learn as you build.",
+      question:
+        "What are these tracks and do I need to be studying that to compete?",
+      answer:
+        "Hell no! The tracks (Fintech, AI/ML, MedTech, Sustainability) are just themes to help you focus. You don't need to be studying finance to build a fintech app or studying medicine to do MedTech. Pick the problem domain that excites you most - we'll provide mentors and resources to help you learn as you build.",
     },
     {
       question: "What's the overall format?",
-      answer: "Here's the flow: registration and team formation at the start, then you've got 24-36 hours to build your solution. We'll have mentors available throughout, plus workshops and resources. At the end, teams pitch to judges using a VCIC-inspired framework that evaluates both technical execution and business viability. Winners announced across each track plus special prizes!",
+      answer:
+        "Here's the flow: registration and team formation at the start, then you've got 24-36 hours to build your solution. We'll have mentors available throughout, plus workshops and resources. At the end, teams pitch to judges using a VCIC-inspired framework that evaluates both technical execution and business viability. Winners announced across each track plus special prizes!",
     },
   ];
 

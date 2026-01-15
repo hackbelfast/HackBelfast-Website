@@ -1,5 +1,5 @@
 const Footer = () => {
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 border-t border-gray-800 mt-20">
@@ -11,7 +11,8 @@ const Footer = () => {
               HackBelfast
             </h3>
             <p className="text-gray-400 text-sm">
-              Northern Ireland's premier hackathon bringing together innovators from across the island.
+              Northern Ireland's premier hackathon bringing together innovators
+              from across the island.
             </p>
           </div>
 
@@ -20,22 +21,34 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="/tracks" className="hover:text-pink-500 transition-colors">
+                <a
+                  href="/tracks"
+                  className="hover:text-pink-500 transition-colors"
+                >
                   Tracks
                 </a>
               </li>
               <li>
-                <a href="/schedule" className="hover:text-pink-500 transition-colors">
+                <a
+                  href="/schedule"
+                  className="hover:text-pink-500 transition-colors"
+                >
                   Schedule
                 </a>
               </li>
               <li>
-                <a href="/judging" className="hover:text-pink-500 transition-colors">
+                <a
+                  href="/judging"
+                  className="hover:text-pink-500 transition-colors"
+                >
                   Judging
                 </a>
               </li>
               <li>
-                <a href="/register" className="hover:text-pink-500 transition-colors">
+                <a
+                  href="/register"
+                  className="hover:text-pink-500 transition-colors"
+                >
                   Register
                 </a>
               </li>
@@ -46,8 +59,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Event Details</h4>
             <p className="text-gray-400 text-sm mb-4">
-              14-15 February 2026<br/>
-              📍 Queen's University Belfast, Northern Ireland<br/>
+              7-8 March 2026
+              <br />
+              📍 Queen's University Belfast, Northern Ireland
+              <br />
               ⏱️ 24-36 Hour Hackathon
             </p>
 
@@ -113,7 +128,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

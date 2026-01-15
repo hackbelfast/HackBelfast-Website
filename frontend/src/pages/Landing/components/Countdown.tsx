@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 
 interface TimeLeft {
-  days: number
-  hours: number
-  minutes: number
-  seconds: number
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
 }
 
 const CountdownTimer = () => {
@@ -12,32 +12,34 @@ const CountdownTimer = () => {
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0
-  })
+    seconds: 0,
+  });
 
   useEffect(() => {
-    const targetDate = new Date('2026-03-07T09:00:00+00:00').getTime()
+    const targetDate = new Date("2026-03-07T09:00:00+00:00").getTime();
 
     const timer = setInterval(() => {
-      const now = new Date().getTime()
-      const distance = targetDate - now
+      const now = new Date().getTime();
+      const distance = targetDate - now;
 
       if (distance < 0) {
-        clearInterval(timer)
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 })
-        return
+        clearInterval(timer);
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        return;
       }
 
       setTimeLeft({
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        hours: Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        ),
         minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((distance % (1000 * 60)) / 1000)
-      })
-    }, 1000)
+        seconds: Math.floor((distance % (1000 * 60)) / 1000),
+      });
+    }, 1000);
 
-    return () => clearInterval(timer)
-  }, [])
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="w-full max-w-4xl mx-auto">
@@ -45,7 +47,7 @@ const CountdownTimer = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-2">
           Hackathon Starts In
         </h2>
-        <p className="text-gray-400">14th February 2026, 9:00 AM GMT</p>
+        <p className="text-gray-400">7-8 March 2026</p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
@@ -86,7 +88,7 @@ const CountdownTimer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CountdownTimer
+export default CountdownTimer;
