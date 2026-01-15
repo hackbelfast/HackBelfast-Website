@@ -75,7 +75,7 @@ const Landing = () => {
           </h1>
 
           <p className="text-2xl md:text-3xl text-gray-300 mb-4">
-            14-15 February 2026
+            7-8 March 2026
           </p>
 
           <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
@@ -313,7 +313,7 @@ const Landing = () => {
             Ready to <span className="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">Build Something Amazing?</span>
           </h2>
           <p className="text-xl text-gray-400 mb-8">
-            Join us on 14-15 February 2026 for 36 hours of non-stop innovation, collaboration, and fun!
+            Join us on 7-8 March 2026 for 36 hours of non-stop innovation, collaboration, and fun!
           </p>
           <Link
             to="/register"
@@ -325,7 +325,7 @@ const Landing = () => {
             </svg>
           </Link>
           <p className="text-gray-500 mt-6 text-sm">
-            Registration closes on 10th February 2026
+            Registration closes on TBD 2026
           </p>
         </div>
       </section>
