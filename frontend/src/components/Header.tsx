@@ -1,110 +1,61 @@
-import { NavLink, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import logo from '../assets/HackBelfast_logo.png';
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
   const isHome = location.pathname === '/'
-
-  const navItems = [
-    { path: '/about', label: 'About'},
-    { path: '/tracks', label: 'Tracks' },
-    { path: '/judging', label: 'Judging' },
+  const sectionItems = [
+    { to: "/#home", label: "Home" },
+    { to: "/#tracks", label: "Tracks" },
+    { to: "/#sponsors", label: "Sponsors" },
+    { to: "/#faq", label: "FAQ" },
+    { to: "/#team", label: "Team" },
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-gray-900/90 backdrop-blur border-b border-gray-800">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:py-4">
+    <header className="relative z-50 bg-transparent pt-0">
+      <div className="mx-auto flex max-w-7xl items-center justify-between bg-[linear-gradient(to_bottom,rgba(9,9,11,0.95)_0%,rgba(9,9,11,0.88)_52%,rgba(9,9,11,0.35)_82%,rgba(9,9,11,0)_100%),radial-gradient(ellipse_at_center,rgba(9,9,11,0.92)_0%,rgba(9,9,11,0.75)_62%,rgba(9,9,11,0)_100%)] px-4 py-3 md:py-4">
         {/* Brand - only show logo when NOT on home page */}
         {!isHome && (
           <NavLink to="/" className="flex items-center gap-3">
-            <img
-              src={logo}
-              alt="HackBelfast Logo"
-              className="h-10 w-auto md:h-12"
-            />
+            <img src={logo} alt="HackBelfast Logo" className="h-10 w-auto md:h-11" />
           </NavLink>
         )}
 
         {/* Desktop nav */}
         <nav className={`hidden items-center gap-6 md:flex ${isHome ? 'mx-auto' : 'ml-auto'}`}>
-          {navItems.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              className={({ isActive }) =>
-                [
-                  'text-sm font-medium transition-colors',
-                  isActive
-                    ? 'text-white'
-                    : 'text-gray-300 hover:text-white',
-                ].join(' ')
-              }
+          {sectionItems.map((item) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              className="text-base font-medium text-zinc-300 transition hover:text-zinc-100"
             >
               {item.label}
-            </NavLink>
+            </Link>
           ))}
-
           <NavLink
             to="/auth"
-            className="rounded-lg bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 px-4 py-2 text-sm font-semibold text-white shadow-md hover:scale-105 transition-transform"
+            className="rounded-lg bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 px-4 py-2 text-base font-semibold text-zinc-950 transition hover:from-orange-200 hover:via-pink-200 hover:to-violet-200"
           >
             Register
           </NavLink>
         </nav>
 
-        {/* Mobile menu button */}
-        <button
-          type="button"
-          className={`inline-flex items-center justify-center rounded-md p-2 text-gray-300 hover:bg-gray-800 hover:text-white md:hidden ${isHome ? 'ml-auto' : ''}`}
-          onClick={() => setMenuOpen((o) => !o)}
-          aria-label="Toggle menu"
-        >
-          <span className="sr-only">Open main menu</span>
-          {menuOpen ? (
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          ) : (
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          )}
-        </button>
+        <div className={`flex items-center gap-2 md:hidden ${isHome ? 'ml-auto' : ''}`}>
+          <Link
+            to="/#tracks"
+            className="rounded-lg border border-zinc-700 px-3 py-2 text-sm font-medium text-zinc-200"
+          >
+            Tracks
+          </Link>
+          <NavLink
+            to="/auth"
+            className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 px-4 py-2 text-base font-semibold text-zinc-950 transition hover:from-orange-200 hover:via-pink-200 hover:to-violet-200"
+          >
+            Register
+          </NavLink>
+        </div>
       </div>
-
-      {/* Mobile menu */}
-      {menuOpen && (
-        <nav className="border-t border-gray-800 bg-gray-900 md:hidden">
-          <div className="space-y-1 px-4 py-3">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.path}
-                to={item.path}
-                className={({ isActive }) =>
-                  [
-                    'block rounded-md px-3 py-2 text-base font-medium',
-                    isActive
-                      ? 'bg-gray-800 text-white'
-                      : 'text-gray-300 hover:bg-gray-800 hover:text-white',
-                  ].join(' ')
-                }
-                onClick={() => setMenuOpen(false)}
-              >
-                {item.label}
-              </NavLink>
-            ))}
-            <NavLink
-              to="/auth"
-              onClick={() => setMenuOpen(false)}
-              className="mt-2 block rounded-md bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 px-3 py-2 text-center text-base font-semibold text-white"
-            >
-              Register
-            </NavLink>
-          </div>
-        </nav>
-      )}
     </header>
   )
 }

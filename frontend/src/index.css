@@ -3,25 +3,80 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-gray-950 text-white font-sans antialiased;
+  :root {
+    color-scheme: dark;
   }
+
+  body {
+    @apply bg-zinc-950 text-zinc-100 font-sans antialiased;
+    background-image:
+      linear-gradient(to bottom right, rgba(56, 189, 248, 0.05), transparent 40%),
+      radial-gradient(circle at 90% 8%, rgba(15, 23, 42, 0.7), transparent 35%);
+    min-height: 100vh;
+  }
+
+  @keyframes matrix-drift {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 48px 36px;
+    }
+  }
+
+  @keyframes matrix-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+      background-position: 0 0;
+      opacity: 0.22;
+    }
+    50% {
+      transform: translate3d(0, -14px, 0);
+      background-position: 22px -14px;
+      opacity: 0.4;
+    }
+  }
+
+  @keyframes matrix-orbit {
+    0% {
+      transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+      background-position: 0 0;
+    }
+    25% {
+      transform: translate3d(10px, -6px, 0) scale(1.04) rotate(1deg);
+      background-position: 18px 6px;
+    }
+    50% {
+      transform: translate3d(0, -12px, 0) scale(1.06) rotate(0deg);
+      background-position: 26px 18px;
+    }
+    75% {
+      transform: translate3d(-10px, -4px, 0) scale(1.03) rotate(-1deg);
+      background-position: 10px 26px;
+    }
+    100% {
+      transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+      background-position: 0 0;
+    }
+  }
+
 }
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-3 bg-hack-gradient text-white font-bold rounded-lg hover:scale-105 transition-transform duration-200 shadow-lg;
+    @apply inline-flex items-center justify-center border border-orange-300 bg-orange-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-zinc-950 transition hover:border-pink-300 hover:bg-transparent hover:text-pink-300;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 border-2 border-hack-pink text-white font-bold rounded-lg hover:bg-hack-pink hover:scale-105 transition-all duration-200;
+    @apply inline-flex items-center justify-center border border-zinc-600 bg-transparent px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-zinc-100 transition hover:border-orange-300 hover:text-orange-200;
   }
 
   .gradient-text {
-    @apply bg-hack-gradient bg-clip-text text-transparent;
+    @apply text-sky-300;
   }
 
   .card {
-    @apply bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-hack-pink transition-all duration-300;
+    @apply border border-zinc-800 bg-zinc-900/70 p-6 transition;
   }
 }

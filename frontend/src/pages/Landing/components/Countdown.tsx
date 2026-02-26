@@ -42,49 +42,43 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">
-          Hackathon Starts In
+    <div className="w-full">
+      <div className="mb-7 border-b border-zinc-800 pb-4">
+        <h2 className="text-2xl font-semibold uppercase tracking-wide md:text-3xl">
+          Starts In
         </h2>
-        <p className="text-gray-400">7-8 March 2026</p>
+        <p className="mt-1 text-sm uppercase tracking-[0.18em] text-zinc-400">
+          7-8 March 2026
+        </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-        <div className="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/30 rounded-xl p-6 text-center">
-          <div className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent mb-2">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+        <div className="border border-zinc-800 bg-zinc-950 p-4 text-center">
+          <div className="text-4xl font-semibold text-zinc-100 md:text-5xl">
             {timeLeft.days}
           </div>
-          <div className="text-sm md:text-base text-gray-400 uppercase tracking-wider">
-            Days
-          </div>
+          <div className="mt-2 text-xs uppercase tracking-[0.18em] text-zinc-500">Days</div>
         </div>
 
-        <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/30 rounded-xl p-6 text-center">
-          <div className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2">
+        <div className="border border-zinc-800 bg-zinc-950 p-4 text-center">
+          <div className="text-4xl font-semibold text-zinc-100 md:text-5xl">
             {timeLeft.hours}
           </div>
-          <div className="text-sm md:text-base text-gray-400 uppercase tracking-wider">
-            Hours
-          </div>
+          <div className="mt-2 text-xs uppercase tracking-[0.18em] text-zinc-500">Hours</div>
         </div>
 
-        <div className="bg-gradient-to-br from-red-500/10 to-pink-500/10 border border-pink-500/30 rounded-xl p-6 text-center">
-          <div className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent mb-2">
+        <div className="border border-zinc-800 bg-zinc-950 p-4 text-center">
+          <div className="text-4xl font-semibold text-zinc-100 md:text-5xl">
             {timeLeft.minutes}
           </div>
-          <div className="text-sm md:text-base text-gray-400 uppercase tracking-wider">
-            Minutes
-          </div>
+          <div className="mt-2 text-xs uppercase tracking-[0.18em] text-zinc-500">Minutes</div>
         </div>
 
-        <div className="bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-purple-500/30 rounded-xl p-6 text-center">
-          <div className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent mb-2">
+        <div className="border border-zinc-800 bg-zinc-950 p-4 text-center">
+          <div className="text-4xl font-semibold text-zinc-100 md:text-5xl">
             {timeLeft.seconds}
           </div>
-          <div className="text-sm md:text-base text-gray-400 uppercase tracking-wider">
-            Seconds
-          </div>
+          <div className="mt-2 text-xs uppercase tracking-[0.18em] text-zinc-500">Seconds</div>
         </div>
       </div>
     </div>
