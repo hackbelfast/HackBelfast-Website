@@ -18,7 +18,7 @@ import Catlin from "../../assets/team/Catlin.jpeg";
 import TimChan from "../../assets/team/timchan.jpeg";
 import OisinImg from "../../assets/team/Oisin.jpeg";
 import OlliverBilling from "../../assets/team/Oliver Billing.jpeg";
-import KyanCassidy from "../../assets/team/Kyan Cassidy.png";
+import KyanCassidy from "../../assets/team/Kyan Cassidy.jpeg";
 
 const Landing = () => {
   const tracks = [
@@ -111,7 +111,7 @@ const Landing = () => {
     { name: "Caitlin O'Neill", role: "Logistics Lead", image: Catlin },
     { name: "Tim Chan", role: "Head Advisor", image: TimChan },
     {
-      name: "Osion McAlinden",
+      name: "Oisin McAlinden",
       role: "Head of Partnership and Finance",
       image: OisinImg,
     },
@@ -126,13 +126,13 @@ const Landing = () => {
   return (
     <div className="relative isolate min-h-screen text-zinc-100">
       <div className="pointer-events-none fixed inset-0 -z-10 bg-zinc-950" />
-      <div className="pointer-events-none fixed inset-0 -z-10 opacity-52 [background-image:radial-gradient(circle,rgba(255,255,255,0.9)_2.1px,transparent_2.5px)] [background-size:18px_18px] [mask-image:radial-gradient(60rem_34rem_at_52%_34%,black_0%,transparent_76%)] [animation:matrix-drift_32s_linear_infinite]" />
-      <div className="pointer-events-none fixed inset-0 -z-10 opacity-24 [background-image:radial-gradient(circle,rgba(255,255,255,0.82)_1.9px,transparent_2.3px)] [background-size:24px_24px] [mask-image:radial-gradient(34rem_22rem_at_18%_72%,black_0%,transparent_80%)]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-30 [background-image:radial-gradient(circle,rgba(251,146,60,0.95)_2px,transparent_2.4px)] [background-size:18px_18px] [mask-image:radial-gradient(44rem_26rem_at_78%_22%,black_0%,transparent_82%)] [animation:matrix-drift_24s_linear_infinite]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-26 [background-image:radial-gradient(circle,rgba(217,70,239,0.94)_2px,transparent_2.4px)] [background-size:20px_20px] [mask-image:radial-gradient(40rem_24rem_at_20%_78%,black_0%,transparent_84%)] [animation:matrix-drift_36s_linear_infinite]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-24 [background-image:radial-gradient(circle,rgba(244,63,94,0.92)_1.9px,transparent_2.3px)] [background-size:16px_16px] [mask-image:radial-gradient(38rem_22rem_at_50%_54%,black_0%,transparent_86%)] [animation:matrix-drift_28s_linear_infinite_reverse]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-22 [background-image:radial-gradient(circle,rgba(253,224,71,0.92)_1.9px,transparent_2.3px)] [background-size:19px_19px] [mask-image:radial-gradient(34rem_20rem_at_66%_72%,black_0%,transparent_86%)] [animation:matrix-drift_34s_linear_infinite]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-18 [background-image:radial-gradient(circle,rgba(126,34,206,0.9)_1.8px,transparent_2.2px)] [background-size:21px_21px] [mask-image:radial-gradient(34rem_20rem_at_14%_30%,black_0%,transparent_84%)] [animation:matrix-drift_42s_linear_infinite_reverse]" />
+      <div className="pointer-events-none fixed inset-0 -z-10 opacity-36 md:opacity-52 [background-image:radial-gradient(circle,rgba(255,255,255,0.9)_2.1px,transparent_2.5px)] [background-size:28px_28px] md:[background-size:18px_18px] [mask-image:radial-gradient(60rem_34rem_at_52%_34%,black_0%,transparent_76%)] [animation:matrix-drift_32s_linear_infinite]" />
+      <div className="pointer-events-none fixed inset-0 -z-10 opacity-14 md:opacity-24 [background-image:radial-gradient(circle,rgba(255,255,255,0.82)_1.9px,transparent_2.3px)] [background-size:34px_34px] md:[background-size:24px_24px] [mask-image:radial-gradient(34rem_22rem_at_18%_72%,black_0%,transparent_80%)]" />
+      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-16 md:opacity-30 [background-image:radial-gradient(circle,rgba(251,146,60,0.95)_2px,transparent_2.4px)] [background-size:30px_30px] md:[background-size:18px_18px] [mask-image:radial-gradient(44rem_26rem_at_78%_22%,black_0%,transparent_82%)] [animation:matrix-drift_24s_linear_infinite]" />
+      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-14 md:opacity-26 [background-image:radial-gradient(circle,rgba(217,70,239,0.94)_2px,transparent_2.4px)] [background-size:32px_32px] md:[background-size:20px_20px] [mask-image:radial-gradient(40rem_24rem_at_20%_78%,black_0%,transparent_84%)] [animation:matrix-drift_36s_linear_infinite]" />
+      <div className="pointer-events-none absolute top-0 left-0 right-0 hidden h-[160vh] -z-10 opacity-24 md:block [background-image:radial-gradient(circle,rgba(244,63,94,0.92)_1.9px,transparent_2.3px)] [background-size:16px_16px] [mask-image:radial-gradient(38rem_22rem_at_50%_54%,black_0%,transparent_86%)] [animation:matrix-drift_28s_linear_infinite_reverse]" />
+      <div className="pointer-events-none absolute top-0 left-0 right-0 hidden h-[160vh] -z-10 opacity-22 md:block [background-image:radial-gradient(circle,rgba(253,224,71,0.92)_1.9px,transparent_2.3px)] [background-size:19px_19px] [mask-image:radial-gradient(34rem_20rem_at_66%_72%,black_0%,transparent_86%)] [animation:matrix-drift_34s_linear_infinite]" />
+      <div className="pointer-events-none absolute top-0 left-0 right-0 hidden h-[160vh] -z-10 opacity-18 md:block [background-image:radial-gradient(circle,rgba(126,34,206,0.9)_1.8px,transparent_2.2px)] [background-size:21px_21px] [mask-image:radial-gradient(34rem_20rem_at_14%_30%,black_0%,transparent_84%)] [animation:matrix-drift_42s_linear_infinite_reverse]" />
       <section id="home" className="relative isolate w-full overflow-hidden">
         <div className="mx-auto flex min-h-[680px] max-w-7xl items-center px-4 pt-20 pb-16 lg:min-h-[780px] lg:pt-24 lg:pb-20">
           <div className="relative z-10 grid w-full gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -268,7 +268,7 @@ const Landing = () => {
         <h2 className="text-center text-3xl font-semibold uppercase tracking-wide md:text-4xl">
           Organising Team
         </h2>
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4">
           {team.map((member) => (
             <article
               key={member.name}
@@ -280,6 +280,11 @@ const Landing = () => {
                     src={member.image}
                     alt={member.name}
                     className="h-full w-full object-cover"
+                    style={
+                      member.name === "Kyan Cassidy"
+                        ? { objectPosition: "50% 42%" }
+                        : undefined
+                    }
                   />
                 ) : (
                   <div className="flex h-full items-center justify-center text-5xl font-semibold text-zinc-700">
