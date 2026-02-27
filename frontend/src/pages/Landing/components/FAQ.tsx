@@ -17,7 +17,7 @@ const FAQ = () => {
     {
       question: "How long is the hackathon?",
       answer:
-        "The hackathon runs for 24-36 hours from 7-8 March 2026. You'll have the whole time to build, iterate, and polish your project before the final presentations and judging rounds.",
+        "The hackathon runs for 24-36 hours from 11-12 April 2026, starting at 10:00 AM. You'll have the whole time to build, iterate, and polish your project before the final presentations and judging rounds.",
     },
     {
       question:
@@ -28,7 +28,7 @@ const FAQ = () => {
     {
       question: "What's the overall format?",
       answer:
-        "Here's the flow: registration and team formation at the start, then you've got 24-36 hours to build your solution. We'll have mentors available throughout, plus workshops and resources. At the end, teams pitch to judges using a VCIC-inspired framework that evaluates both technical execution and business viability. Winners announced across each track plus special prizes!",
+        "Here's the flow: registration and team formation at the start, then you've got 24-36 hours to build your solution. We'll have mentors available throughout, plus workshops and resources. At the end, teams pitch to judges using a structured scoring framework that evaluates technical execution and business viability. Winners are announced across each track plus special prizes.",
     },
   ];
 
@@ -37,35 +37,30 @@ const FAQ = () => {
   };
 
   return (
-    <div className="py-20 px-4">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 text-transparent bg-clip-text">
-            Frequently Asked Questions
+    <section id="faq" className="bg-transparent px-4 py-12">
+      <div className="mx-auto max-w-5xl border border-zinc-800 bg-zinc-900 p-6 md:p-8">
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-4 border-b border-zinc-800 pb-6">
+          <h2 className="text-4xl font-semibold uppercase tracking-wide md:text-5xl">
+            FAQ
           </h2>
-          <p className="text-xl text-gray-300">
-            Got questions? We've got answers.
+          <p className="text-sm uppercase tracking-[0.18em] text-zinc-500">
+            Quick answers before you apply
           </p>
         </div>
 
-        {/* FAQ Items */}
-        <div className="space-y-4">
+        <div className="divide-y divide-zinc-800 border border-zinc-800 bg-zinc-900/40">
           {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-gradient-to-br from-slate-900/50 to-slate-800/50 rounded-xl backdrop-blur-sm border border-slate-700/50 overflow-hidden transition-all duration-300 hover:border-purple-500/50"
-            >
+            <div key={index}>
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left transition-colors"
+                className="flex w-full items-center justify-between px-5 py-5 text-left"
               >
-                <span className="text-lg font-semibold text-gray-200 pr-4">
+                <span className="pr-4 text-base font-medium text-zinc-100 md:text-lg">
                   {faq.question}
                 </span>
                 <svg
-                  className={`w-6 h-6 text-purple-400 transition-transform duration-300 flex-shrink-0 \${
-                    openIndex === index ? 'rotate-180' : ''
+                  className={`h-5 w-5 flex-shrink-0 text-zinc-500 transition-transform duration-300 ${
+                    openIndex === index ? "rotate-180" : ""
                   }`}
                   fill="none"
                   stroke="currentColor"
@@ -79,12 +74,13 @@ const FAQ = () => {
                   />
                 </svg>
               </button>
+
               <div
-                className={`overflow-hidden transition-all duration-300 \${
-                  openIndex === index ? 'max-h-96' : 'max-h-0'
+                className={`overflow-hidden transition-all duration-300 ${
+                  openIndex === index ? "max-h-96" : "max-h-0"
                 }`}
               >
-                <div className="px-6 pb-5 text-gray-400 leading-relaxed">
+                <div className="border-t border-zinc-800 bg-zinc-950/60 px-5 py-4 leading-relaxed text-zinc-400">
                   {faq.answer}
                 </div>
               </div>
@@ -92,20 +88,8 @@ const FAQ = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mt-12 text-center">
-          <p className="text-gray-300 mb-6">
-            Still have questions? Reach out to us!
-          </p>
-          <a
-            href="mailto:info@hackbelfast.com"
-            className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50"
-          >
-            Contact Us
-          </a>
-        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
