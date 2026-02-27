@@ -17,7 +17,7 @@ const FAQ = () => {
     {
       question: "How long is the hackathon?",
       answer:
-        "The hackathon runs for 24-36 hours from 7-8 March 2026. You'll have the whole time to build, iterate, and polish your project before the final presentations and judging rounds.",
+        "The hackathon runs for 24-36 hours from 11-12 April 2026, starting at 10:00 AM. You'll have the whole time to build, iterate, and polish your project before the final presentations and judging rounds.",
     },
     {
       question:
@@ -88,15 +88,6 @@ const FAQ = () => {
           ))}
         </div>
 
-        <div className="mt-8 border-l-2 border-zinc-700 pl-4">
-          <p className="text-zinc-400">Still have questions?</p>
-          <a
-            href="mailto:info@hackbelfast.com"
-            className="mt-3 inline-flex border border-zinc-700 px-5 py-2 text-sm font-semibold uppercase tracking-wide text-zinc-100 transition hover:border-zinc-500"
-          >
-            Contact Us
-          </a>
-        </div>
       </div>
     </section>
   );

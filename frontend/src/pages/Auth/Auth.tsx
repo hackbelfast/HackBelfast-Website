@@ -438,10 +438,10 @@ const Auth = () => {
             )}
           </h1>
           <p className="text-gray-400">
-            {mode === "login"
-              ? "Log in to your HackBelfast account"
-              : "7-8 March 2026 • Belfast, Northern Ireland"}
-          </p>
+              {mode === "login"
+                ? "Log in to your HackBelfast account"
+                : "11-12 April 2026, 10:00 AM | Belfast, Northern Ireland"}
+            </p>
         </div>
 
         {/* LOGIN MODE */}

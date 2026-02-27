@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import TrackCard from "./components/Tracks";
 import FAQs from "./components/FAQ";
 import CountdownTimer from "./components/Countdown";
-import logo from "../../assets/HackBelfast_logo.png";
 import PatchLogo from "../../assets/sponsor_logos/Patch.png";
 import EquipmentShareLogo from "../../assets/sponsor_logos/EquipmentShare_Logo_DIGITAL_Stacked_White.svg";
 import TechstarsLogo from "../../assets/sponsor_logos/Techstars_Logo_Primary_White-9941x3975-5e16c90.png";
@@ -14,10 +13,11 @@ import OrmeauLabsLogo from "../../assets/sponsor_logos/ormeau-labs-white.svg";
 import TrinityLogo from "../../assets/sponsor_logos/Trinity-logo-White.png";
 import Nazzal from "../../assets/team/Nazzal.png";
 import Raj from "../../assets/team/Raj.png";
+import Abdul from "../../assets/team/abdul.jpeg";
 import Catlin from "../../assets/team/Catlin.jpeg";
 import TimChan from "../../assets/team/timchan.jpeg";
 import OisinImg from "../../assets/team/Oisin.jpeg";
-import OlliverBilling from "../../assets/team/Olliver Billing.png";
+import OlliverBilling from "../../assets/team/Oliver Billing.jpeg";
 import KyanCassidy from "../../assets/team/Kyan Cassidy.png";
 
 const Landing = () => {
@@ -40,7 +40,7 @@ const Landing = () => {
       ),
       title: "Builder",
       description:
-        "For technical teams building coded products from scratch or with modern dev tooling.",
+        "For technical teams building software-first products with code. Builder teams are expected to design a working MVP, implement core logic, and demonstrate technical depth through architecture, execution quality, and product thinking. Strong submissions typically combine reliable engineering with clear user value and a credible path to real-world deployment.",
     },
     {
       icon: (
@@ -60,7 +60,7 @@ const Landing = () => {
       ),
       title: "Non-Builder",
       description:
-        "For teams using no-code/low-code tools to validate ideas and ship fast without heavy coding.",
+        "For participants with limited coding experience who still want to build and ship strong solutions. Teams can use tools like Lovable and other low-code/no-code platforms to prototype quickly, validate ideas, and present a functional product without deep engineering overhead. Judging focuses on problem clarity, usability, creativity, and practical impact rather than raw code complexity.",
     },
     {
       icon: (
@@ -80,7 +80,7 @@ const Landing = () => {
       ),
       title: "Finance",
       description:
-        "For teams focused on investment, markets, fintech, and commercially viable financial solutions.",
+        " The Fintech challenge is a quant styled model and portfolio engineering competition. Teams receive a custom dataset containing daily features for a UK large and mid cap equity universe across roughly 10 to 15 years. Submissions are evaluated on a hidden out-of-sample period, and final judging blends quantitative performance with the clarity, credibility, and communication of the team’s model rationale and analysis.",
     },
   ];
 
@@ -107,7 +107,7 @@ const Landing = () => {
   const team = [
     { name: "Ahmed Nazzal", role: "Lead Organiser", image: Nazzal },
     { name: "Raj Aryan Upadhyaya", role: "Tech Lead", image: Raj },
-    { name: "Abdulrahman Dessisa", role: "Marketing Lead" },
+    { name: "Abdulrahman Dessisa", role: "Marketing Lead", image: Abdul },
     { name: "Caitlin O'Neill", role: "Logistics Lead", image: Catlin },
     { name: "Tim Chan", role: "Head Advisor", image: TimChan },
     {
@@ -133,19 +133,14 @@ const Landing = () => {
       <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-24 [background-image:radial-gradient(circle,rgba(244,63,94,0.92)_1.9px,transparent_2.3px)] [background-size:16px_16px] [mask-image:radial-gradient(38rem_22rem_at_50%_54%,black_0%,transparent_86%)] [animation:matrix-float_16s_ease-in-out_infinite_reverse]" />
       <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-22 [background-image:radial-gradient(circle,rgba(253,224,71,0.92)_1.9px,transparent_2.3px)] [background-size:19px_19px] [mask-image:radial-gradient(34rem_20rem_at_66%_72%,black_0%,transparent_86%)] [animation:matrix-drift_22s_linear_infinite]" />
       <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-18 [background-image:radial-gradient(circle,rgba(126,34,206,0.9)_1.8px,transparent_2.2px)] [background-size:21px_21px] [mask-image:radial-gradient(34rem_20rem_at_14%_30%,black_0%,transparent_84%)] [animation:matrix-orbit_28s_ease-in-out_infinite_reverse]" />
-      <img
-        src={logo}
-        alt="HackBelfast"
-        className="pointer-events-none absolute top-4 left-4 z-20 h-[clamp(4rem,10vw,10.5rem)] w-auto opacity-85 saturate-[0.8] contrast-105"
-      />
       <section id="home" className="relative isolate w-full overflow-hidden">
         <div className="mx-auto flex min-h-[680px] max-w-7xl items-center px-4 pt-20 pb-16 lg:min-h-[780px] lg:pt-24 lg:pb-20">
           <div className="relative z-10 grid w-full gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div>
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-zinc-300 md:text-base">
-                7-8 March 2026 | Queen's University Belfast
+                11-12 April 2026 | Queen's University Belfast
                 <br />
-                Computer Science Building | 16A Malone Rd, Belfast BT9 5BN
+                Computer Science Building | 16A Malone Rd
               </p>
               <h1 className="text-5xl font-semibold uppercase leading-[0.94] md:text-7xl lg:text-8xl">
                 Build hard.
@@ -158,12 +153,13 @@ const Landing = () => {
                 </span>
               </h1>
               <p className="mt-7 max-w-xl border-l-2 border-zinc-600 pl-4 text-base text-zinc-300 md:text-lg">
-                HackBelfast brings students across Ireland together for a
-                high-intensity build weekend with structured judging and
-                company-facing demos.
+                HackBelfast is Northern Ireland's largest student-led hackathon,
+                bringing together 175+ students from universities across Ireland
+                for a high-energy 24-hour innovation sprint to tackle real-world
+                challenges.
               </p>
               <div className="mt-12 flex flex-wrap gap-4">
-                <Link to="/auth" className="btn-primary px-8 py-3">
+                <Link to="/register" className="btn-primary px-8 py-3">
                   Register
                 </Link>
                 <a
@@ -176,7 +172,7 @@ const Landing = () => {
                 </a>
               </div>
             </div>
-            <div className="border border-zinc-700 bg-zinc-950/75 p-6 md:p-8">
+            <div className="bg-zinc-950 p-6 md:p-8">
               <CountdownTimer />
             </div>
           </div>
@@ -215,10 +211,10 @@ const Landing = () => {
 
       <section
         id="tracks"
-        className="mt-32 w-full bg-zinc-900 py-10 lg:mt-40 lg:py-12"
+        className="mt-32 w-full bg-zinc-950 py-10 lg:mt-40 lg:py-12"
       >
         <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <div className="mb-8 flex items-end justify-between gap-6">
+          <div className="mb-8 flex items-end justify-between gap-6 md:mb-10">
             <div>
               <h2 className="text-3xl font-semibold uppercase tracking-wide md:text-4xl">
                 Competition Tracks
@@ -229,15 +225,9 @@ const Landing = () => {
                 Sustainability Solution, and other category awards.
               </p>
             </div>
-            <Link
-              to="/tracks"
-              className="hidden text-sm text-orange-300 transition hover:text-pink-300 md:inline"
-            >
-              View full track guide
-            </Link>
           </div>
 
-          <div className="grid gap-x-10 gap-y-8 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10">
             {tracks.map((track, index) => (
               <TrackCard key={index} {...track} />
             ))}

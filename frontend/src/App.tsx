@@ -5,7 +5,7 @@ import Landing from './pages/Landing/Landing'
 import Tracks from './pages/Tracks/Tracks'
 import Judging from './pages/Judging/Judging'
 
-import Auth from './pages/Auth/Auth'
+import RegisterClosed from './pages/RegisterClosed/RegisterClosed'
 
 import NotFound from "./pages/Errors/404"
 import Forbidden from "./pages/Errors/403"
@@ -21,7 +21,8 @@ export default function App() {
               <Route path='about' element={<About />} />
               <Route path='tracks' element={<Tracks />} />
               <Route path='judging' element={<Judging />} />
-              <Route path='auth' element={<Auth />} />
+              <Route path='register' element={<RegisterClosed />} />
+              <Route path='auth' element={<RegisterClosed />} />
             </Route>
 
             {/* Error pages */}
