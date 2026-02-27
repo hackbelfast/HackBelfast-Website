@@ -37,7 +37,7 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="bg-transparent px-4 py-12">
+    <section id="faq" className="bg-transparent px-4 py-24 lg:py-32">
       <div className="mx-auto max-w-5xl border border-zinc-800 bg-zinc-900 p-6 md:p-8">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4 border-b border-zinc-800 pb-6">
           <h2 className="text-4xl font-semibold uppercase tracking-wide md:text-5xl">
@@ -87,7 +87,6 @@ const FAQ = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

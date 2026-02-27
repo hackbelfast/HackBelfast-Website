@@ -106,7 +106,7 @@ const Landing = () => {
 
   const team = [
     { name: "Ahmed Nazzal", role: "Lead Organiser", image: Nazzal },
-    { name: "Raj Aryan Upadhyaya", role: "Tech Lead", image: Raj },
+    { name: "Raj Aryan Upadhyaya", role: "Logistics Advisor", image: Raj },
     { name: "Abdulrahman Dessisa", role: "Marketing Lead", image: Abdul },
     { name: "Caitlin O'Neill", role: "Logistics Lead", image: Catlin },
     { name: "Tim Chan", role: "Head Advisor", image: TimChan },
@@ -126,13 +126,13 @@ const Landing = () => {
   return (
     <div className="relative isolate min-h-screen text-zinc-100">
       <div className="pointer-events-none fixed inset-0 -z-10 bg-zinc-950" />
-      <div className="pointer-events-none fixed inset-0 -z-10 opacity-52 [background-image:radial-gradient(circle,rgba(255,255,255,0.9)_2.1px,transparent_2.5px)] [background-size:18px_18px] [mask-image:radial-gradient(60rem_34rem_at_52%_34%,black_0%,transparent_76%)] [animation:matrix-drift_20s_linear_infinite]" />
+      <div className="pointer-events-none fixed inset-0 -z-10 opacity-52 [background-image:radial-gradient(circle,rgba(255,255,255,0.9)_2.1px,transparent_2.5px)] [background-size:18px_18px] [mask-image:radial-gradient(60rem_34rem_at_52%_34%,black_0%,transparent_76%)] [animation:matrix-drift_32s_linear_infinite]" />
       <div className="pointer-events-none fixed inset-0 -z-10 opacity-24 [background-image:radial-gradient(circle,rgba(255,255,255,0.82)_1.9px,transparent_2.3px)] [background-size:24px_24px] [mask-image:radial-gradient(34rem_22rem_at_18%_72%,black_0%,transparent_80%)]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-30 [background-image:radial-gradient(circle,rgba(251,146,60,0.95)_2px,transparent_2.4px)] [background-size:18px_18px] [mask-image:radial-gradient(44rem_26rem_at_78%_22%,black_0%,transparent_82%)] [animation:matrix-float_13s_ease-in-out_infinite]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-26 [background-image:radial-gradient(circle,rgba(217,70,239,0.94)_2px,transparent_2.4px)] [background-size:20px_20px] [mask-image:radial-gradient(40rem_24rem_at_20%_78%,black_0%,transparent_84%)] [animation:matrix-orbit_24s_ease-in-out_infinite]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-24 [background-image:radial-gradient(circle,rgba(244,63,94,0.92)_1.9px,transparent_2.3px)] [background-size:16px_16px] [mask-image:radial-gradient(38rem_22rem_at_50%_54%,black_0%,transparent_86%)] [animation:matrix-float_16s_ease-in-out_infinite_reverse]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-22 [background-image:radial-gradient(circle,rgba(253,224,71,0.92)_1.9px,transparent_2.3px)] [background-size:19px_19px] [mask-image:radial-gradient(34rem_20rem_at_66%_72%,black_0%,transparent_86%)] [animation:matrix-drift_22s_linear_infinite]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-18 [background-image:radial-gradient(circle,rgba(126,34,206,0.9)_1.8px,transparent_2.2px)] [background-size:21px_21px] [mask-image:radial-gradient(34rem_20rem_at_14%_30%,black_0%,transparent_84%)] [animation:matrix-orbit_28s_ease-in-out_infinite_reverse]" />
+      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-30 [background-image:radial-gradient(circle,rgba(251,146,60,0.95)_2px,transparent_2.4px)] [background-size:18px_18px] [mask-image:radial-gradient(44rem_26rem_at_78%_22%,black_0%,transparent_82%)] [animation:matrix-drift_24s_linear_infinite]" />
+      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-26 [background-image:radial-gradient(circle,rgba(217,70,239,0.94)_2px,transparent_2.4px)] [background-size:20px_20px] [mask-image:radial-gradient(40rem_24rem_at_20%_78%,black_0%,transparent_84%)] [animation:matrix-drift_36s_linear_infinite]" />
+      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-24 [background-image:radial-gradient(circle,rgba(244,63,94,0.92)_1.9px,transparent_2.3px)] [background-size:16px_16px] [mask-image:radial-gradient(38rem_22rem_at_50%_54%,black_0%,transparent_86%)] [animation:matrix-drift_28s_linear_infinite_reverse]" />
+      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-22 [background-image:radial-gradient(circle,rgba(253,224,71,0.92)_1.9px,transparent_2.3px)] [background-size:19px_19px] [mask-image:radial-gradient(34rem_20rem_at_66%_72%,black_0%,transparent_86%)] [animation:matrix-drift_34s_linear_infinite]" />
+      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-18 [background-image:radial-gradient(circle,rgba(126,34,206,0.9)_1.8px,transparent_2.2px)] [background-size:21px_21px] [mask-image:radial-gradient(34rem_20rem_at_14%_30%,black_0%,transparent_84%)] [animation:matrix-drift_42s_linear_infinite_reverse]" />
       <section id="home" className="relative isolate w-full overflow-hidden">
         <div className="mx-auto flex min-h-[680px] max-w-7xl items-center px-4 pt-20 pb-16 lg:min-h-[780px] lg:pt-24 lg:pb-20">
           <div className="relative z-10 grid w-full gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -235,8 +235,8 @@ const Landing = () => {
         </div>
       </section>
 
-      <section id="sponsors" className="relative w-full py-8 lg:py-10">
-        <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent_0%,rgba(9,9,11,0.92)_22%,rgba(9,9,11,0.92)_78%,transparent_100%)]" />
+      <section id="sponsors" className="relative w-full py-14 lg:py-20">
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent_0%,rgba(9,9,11,0.97)_10%,rgba(9,9,11,0.97)_92%,transparent_100%)]" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <h2 className="text-3xl font-semibold uppercase tracking-wide md:text-4xl">
             Sponsors
@@ -263,11 +263,6 @@ const Landing = () => {
       </section>
 
       <FAQs />
-
-      <section
-        id="join"
-        className="w-full border-y border-zinc-800 bg-zinc-900 py-8"
-      ></section>
 
       <section id="team" className="mx-auto mt-6 max-w-7xl px-4 pb-6">
         <h2 className="text-center text-3xl font-semibold uppercase tracking-wide md:text-4xl">
