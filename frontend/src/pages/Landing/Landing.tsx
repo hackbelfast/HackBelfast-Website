@@ -19,6 +19,7 @@ import TimChan from "../../assets/team/timchan.jpeg";
 import OisinImg from "../../assets/team/Oisin.jpeg";
 import OlliverBilling from "../../assets/team/Oliver Billing.jpeg";
 import KyanCassidy from "../../assets/team/Kyan Cassidy.jpeg";
+import Mayukh from "../../assets/team/mayukh.jpg";
 
 const Landing = () => {
   const tracks = [
@@ -105,22 +106,60 @@ const Landing = () => {
   ];
 
   const team = [
-    { name: "Ahmed Nazzal", role: "Lead Organiser", image: Nazzal },
-    { name: "Raj Aryan Upadhyaya", role: "Logistics Advisor", image: Raj },
-    { name: "Abdulrahman Dessisa", role: "Marketing Lead", image: Abdul },
-    { name: "Caitlin O'Neill", role: "Logistics Lead", image: Catlin },
-    { name: "Tim Chan", role: "Head Advisor", image: TimChan },
+    {
+      name: "Ahmed Nazzal",
+      role: "Lead Organiser",
+      image: Nazzal,
+      linkedin: "https://www.linkedin.com/in/a-nazzal/",
+    },
+    {
+      name: "Raj Aryan Upadhyaya",
+      role: "Logistics Advisor",
+      image: Raj,
+      linkedin: "https://www.linkedin.com/in/raupadhyaya04/",
+    },
+    {
+      name: "Abdulrahman Dessisa",
+      role: "Marketing Lead",
+      image: Abdul,
+      linkedin: "https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/",
+    },
+    {
+      name: "Caitlin O'Neill",
+      role: "Logistics Lead",
+      image: Catlin,
+      linkedin: "https://www.linkedin.com/in/caitlin-o%E2%80%99neill-83baa229b/",
+    },
+    {
+      name: "Tim Chan",
+      role: "Head Advisor",
+      image: TimChan,
+      linkedin: "https://www.linkedin.com/in/chuntimchan/",
+    },
     {
       name: "Oisin McAlinden",
       role: "Head of Partnership and Finance",
       image: OisinImg,
+      linkedin: "https://www.linkedin.com/in/oisin-mcalinden-3b6a8a2a4/",
     },
     {
-      name: "Olliver Billing",
+      name: "Oliver Billing",
       role: "Fintech Track Head",
       image: OlliverBilling,
+      linkedin: "https://www.linkedin.com/in/oliver-billing49161205/",
     },
-    { name: "Kyan Cassidy", role: "Fintech Track Head", image: KyanCassidy },
+    {
+      name: "Kyan Cassidy",
+      role: "Fintech Track Head",
+      image: KyanCassidy,
+      linkedin: "https://www.linkedin.com/in/kyan-cassidy/",
+    },
+    {
+      name: "Mayukh Banerjee",
+      role: "Logistics",
+      image: Mayukh,
+      linkedin: "https://www.linkedin.com/in/baneerjem/",
+    },
   ];
 
   return (
@@ -276,16 +315,23 @@ const Landing = () => {
             >
               <div className="aspect-square bg-zinc-950">
                 {member.image ? (
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="h-full w-full object-cover"
-                    style={
-                      member.name === "Kyan Cassidy"
-                        ? { objectPosition: "50% 42%" }
-                        : undefined
-                    }
-                  />
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${member.name} LinkedIn profile`}
+                  >
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="h-full w-full object-cover"
+                      style={
+                        member.name === "Kyan Cassidy"
+                          ? { objectPosition: "50% 42%" }
+                          : undefined
+                      }
+                    />
+                  </a>
                 ) : (
                   <div className="flex h-full items-center justify-center text-5xl font-semibold text-zinc-700">
                     {member.name
