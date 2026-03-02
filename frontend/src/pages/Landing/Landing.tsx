@@ -8,9 +8,9 @@ import TechstarsLogo from "../../assets/sponsor_logos/Techstars_Logo_Primary_Whi
 import SponsorLogoWhite from "../../assets/sponsor_logos/logowhite.svg";
 import OptionsLogo from "../../assets/sponsor_logos/optionslogo.svg";
 import KainosLogo from "../../assets/sponsor_logos/Kainos.webp";
-import OpenAILogo from "../../assets/sponsor_logos/OpenAI-white-monoblossom.svg";
 import OrmeauLabsLogo from "../../assets/sponsor_logos/ormeau-labs-white.svg";
 import TrinityLogo from "../../assets/sponsor_logos/Trinity-logo-White.png";
+import QUBLogo from "../../assets/sponsor_logos/qub logo.png";
 import Nazzal from "../../assets/team/Nazzal.png";
 import Raj from "../../assets/team/Raj.png";
 import Abdul from "../../assets/team/abdul.jpeg";
@@ -100,12 +100,12 @@ const Landing = () => {
       logo: TechstarsLogo,
       logoClass: "h-[7.3125rem] md:h-[8.775rem]",
     },
-    { name: "OpenAI", logo: OpenAILogo, logoClass: "h-24 md:h-[7.5rem]" },
     { name: "Ormeau Labs", logo: OrmeauLabsLogo, logoClass: "h-16 md:h-20" },
     { name: "Trinity", logo: TrinityLogo, logoClass: "h-24 md:h-28" },
     { name: "Logo White", logo: SponsorLogoWhite, logoClass: "h-8 md:h-10" },
     { name: "Options IT", logo: OptionsLogo, logoClass: "h-16 md:h-20" },
     { name: "Kainos", logo: KainosLogo, logoClass: "h-20 md:h-24" },
+    { name: "Queen's University Belfast", logo: QUBLogo, logoClass: "h-20 md:h-24" },
   ];
 
   const team = [
