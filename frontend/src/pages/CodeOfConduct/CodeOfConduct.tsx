@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const CodeOfConduct = () => {
   return (
     <div className="min-h-screen bg-black text-zinc-100">
