@@ -20,6 +20,9 @@ import OisinImg from "../../assets/team/Oisin.jpeg";
 import OlliverBilling from "../../assets/team/Oliver Billing.jpeg";
 import KyanCassidy from "../../assets/team/Kyan Cassidy.jpeg";
 import Mayukh from "../../assets/team/mayukh.jpg";
+import Christy from "../../assets/team/christy.jpg";
+import Catherine from "../../assets/team/catherine.jpg";
+import Grace from "../../assets/team/grace.jpg";
 
 const Landing = () => {
   const tracks = [
@@ -113,10 +116,10 @@ const Landing = () => {
       linkedin: "https://www.linkedin.com/in/a-nazzal/",
     },
     {
-      name: "Raj Aryan Upadhyaya",
-      role: "Logistics Advisor",
-      image: Raj,
-      linkedin: "https://www.linkedin.com/in/raupadhyaya04/",
+      name: "Caitlin O'Neill",
+      role: "Logistics Lead",
+      image: Catlin,
+      linkedin: "https://www.linkedin.com/in/caitlin-o%E2%80%99neill-83baa229b/",
     },
     {
       name: "Abdulrahman Dessisa",
@@ -125,22 +128,22 @@ const Landing = () => {
       linkedin: "https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/",
     },
     {
-      name: "Caitlin O'Neill",
-      role: "Logistics Lead",
-      image: Catlin,
-      linkedin: "https://www.linkedin.com/in/caitlin-o%E2%80%99neill-83baa229b/",
-    },
-    {
-      name: "Tim Chan",
-      role: "Head Advisor",
-      image: TimChan,
-      linkedin: "https://www.linkedin.com/in/chuntimchan/",
+      name: "Raj Aryan Upadhyaya",
+      role: "Advisor",
+      image: Raj,
+      linkedin: "https://www.linkedin.com/in/raupadhyaya04/",
     },
     {
       name: "Oisin McAlinden",
       role: "Head of Partnership and Finance",
       image: OisinImg,
       linkedin: "https://www.linkedin.com/in/oisin-mcalinden-3b6a8a2a4/",
+    },
+    {
+      name: "Tim Chan",
+      role: "Advisor",
+      image: TimChan,
+      linkedin: "https://www.linkedin.com/in/chuntimchan/",
     },
     {
       name: "Oliver Billing",
@@ -159,6 +162,24 @@ const Landing = () => {
       role: "Logistics",
       image: Mayukh,
       linkedin: "https://www.linkedin.com/in/baneerjem/",
+    },
+    {
+      name: "Christy Chovalloor",
+      role: "Logistics",
+      image: Christy,
+      linkedin: "https://www.linkedin.com/in/cchovalloor/",
+    },
+    {
+      name: "Catherine Kane",
+      role: "Logistics",
+      image: Catherine,
+      linkedin: "https://www.linkedin.com/in/catherine-kane-90bb82238/",
+    },
+    {
+      name: "Grace Coyle",
+      role: "Logistics",
+      image: Grace,
+      linkedin: "https://www.linkedin.com/in/grace-coyle-671718270/",
     },
   ];
 
@@ -315,12 +336,25 @@ const Landing = () => {
             >
               <div className="aspect-square bg-zinc-950">
                 {member.image ? (
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`${member.name} LinkedIn profile`}
-                  >
+                  member.linkedin ? (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${member.name} LinkedIn profile`}
+                    >
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="h-full w-full object-cover"
+                        style={
+                          member.name === "Kyan Cassidy"
+                            ? { objectPosition: "50% 42%" }
+                            : undefined
+                        }
+                      />
+                    </a>
+                  ) : (
                     <img
                       src={member.image}
                       alt={member.name}
@@ -331,7 +365,7 @@ const Landing = () => {
                           : undefined
                       }
                     />
-                  </a>
+                  )
                 ) : (
                   <div className="flex h-full items-center justify-center text-5xl font-semibold text-zinc-700">
                     {member.name

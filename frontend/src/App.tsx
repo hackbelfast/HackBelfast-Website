@@ -4,6 +4,7 @@ import Layout from "./components/Layout"
 import Landing from './pages/Landing/Landing'
 import Tracks from './pages/Tracks/Tracks'
 import Judging from './pages/Judging/Judging'
+import CodeOfConduct from './pages/CodeOfConduct/CodeOfConduct'
 
 import RegisterClosed from './pages/RegisterClosed/RegisterClosed'
 
@@ -21,6 +22,7 @@ export default function App() {
               <Route path='about' element={<About />} />
               <Route path='tracks' element={<Tracks />} />
               <Route path='judging' element={<Judging />} />
+              <Route path='code-of-conduct' element={<CodeOfConduct />} />
               <Route path='register' element={<RegisterClosed />} />
               <Route path='auth' element={<RegisterClosed />} />
             </Route>
