@@ -32,44 +32,50 @@ const Footer = () => {
                 Sponsor
               </a>
             </li>
+            <li>
+              <a href="/code-of-conduct" className="transition hover:text-zinc-100">
+                Code of Conduct
+              </a>
+            </li>
           </ul>
         </div>
 
         <div>
           <h4 className="mb-4 text-lg font-semibold text-zinc-100">
-            Event Details
+            Socials
           </h4>
-          <p className="mb-4 text-sm text-zinc-400">
-            11-12 April 2026, 10:00 AM
-            <br />
-            Queen's University Belfast
-            <br />
-            Computer Science Building | 16A Malone Rd
-            <br />
-            Belfast BT9 5BN
-            <br />
-            24-36 Hour Hackathon
-          </p>
-          <div className="flex gap-4">
-            <a
-              href="https://www.linkedin.com/company/hackbelfast"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="HackBelfast on LinkedIn"
-              className="text-zinc-400 transition hover:text-zinc-100"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://www.instagram.com/hackbelfast"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="HackBelfast on Instagram"
-              className="text-zinc-400 transition hover:text-zinc-100"
-            >
-              Instagram
-            </a>
-          </div>
+          <ul className="space-y-2 text-sm text-zinc-400">
+            <li>
+              <a
+                href="https://discord.gg/FK9KUZyHC7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-zinc-100"
+              >
+                Discord
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/hackbelfast"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-zinc-100"
+              >
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/hackbelfast"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-zinc-100"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="border-t border-zinc-800 py-6 text-center text-sm text-zinc-500">
