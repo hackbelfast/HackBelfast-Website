@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from "../../../assets/HackBelfast_logo.png";
 
-const TARGET_DATE_MS = new Date("2026-04-11T10:00:00+01:00").getTime();
+const TARGET_DATE_MS = new Date("2026-04-25T10:00:00+01:00").getTime();
 
 interface TimeLeft {
   days: number;
@@ -53,7 +53,7 @@ const CountdownTimer = () => {
             Starts In
           </h2>
           <p className="mt-1 text-sm uppercase tracking-[0.18em] text-zinc-400">
-            11-12 April 2026 | 10:00 AM
+            25-26th April 2026 | 10:00 AM
           </p>
         </div>
         <img

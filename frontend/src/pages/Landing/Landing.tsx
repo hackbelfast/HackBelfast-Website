@@ -198,7 +198,7 @@ const Landing = () => {
           <div className="relative z-10 grid w-full gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div>
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-zinc-300 md:text-base">
-                11-12 April 2026 | Queen's University Belfast
+                25-26th April 2026 | Queen's University Belfast
                 <br />
                 Computer Science Building | 16A Malone Rd
               </p>

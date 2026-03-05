@@ -17,7 +17,7 @@ const FAQ = () => {
     {
       question: "How long is the hackathon?",
       answer:
-        "The hackathon runs for 24-36 hours from 11-12 April 2026, starting at 10:00 AM. You'll have the whole time to build, iterate, and polish your project before the final presentations and judging rounds.",
+        "The hackathon runs for 24-36 hours from 25-26th April 2026, starting at 10:00 AM. You'll have the whole time to build, iterate, and polish your project before the final presentations and judging rounds.",
     },
     {
       question:
