@@ -11,6 +11,9 @@ import KainosLogo from "../../assets/sponsor_logos/Kainos.webp";
 import OrmeauLabsLogo from "../../assets/sponsor_logos/ormeau-labs-white.svg";
 import TrinityLogo from "../../assets/sponsor_logos/Trinity-logo-White.png";
 import QUBLogo from "../../assets/sponsor_logos/qub logo.png";
+import ElevenLabsLogo from "../../assets/sponsor_logos/elevenlabs (1)-Photoroom.png";
+import VirtuFinancialLogo from "../../assets/sponsor_logos/Virtu_Financial_logo.png";
+import MLHLogo from "../../assets/sponsor_logos/mlh-logo-color.png";
 import Nazzal from "../../assets/team/Nazzal.png";
 import Raj from "../../assets/team/Raj.png";
 import Abdul from "../../assets/team/abdul.jpeg";
@@ -106,6 +109,9 @@ const Landing = () => {
     { name: "Options IT", logo: OptionsLogo, logoClass: "h-16 md:h-20" },
     { name: "Kainos", logo: KainosLogo, logoClass: "h-20 md:h-24" },
     { name: "Queen's University Belfast", logo: QUBLogo, logoClass: "h-20 md:h-24" },
+    { name: "ElevenLabs", logo: ElevenLabsLogo, logoClass: "h-24 md:h-28" },
+    { name: "Virtu Financial", logo: VirtuFinancialLogo, logoClass: "h-16 md:h-20" },
+    { name: "MLH", logo: MLHLogo, logoClass: "h-20 md:h-24" },
   ];
 
   const team = [
