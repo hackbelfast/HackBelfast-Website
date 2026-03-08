@@ -2,30 +2,7 @@ import { Link } from "react-router-dom";
 import TrackCard from "./components/Tracks";
 import FAQs from "./components/FAQ";
 import CountdownTimer from "./components/Countdown";
-import PatchLogo from "../../assets/sponsor_logos/Patch.png";
-import EquipmentShareLogo from "../../assets/sponsor_logos/EquipmentShare_Logo_DIGITAL_Stacked_White.svg";
-import TechstarsLogo from "../../assets/sponsor_logos/Techstars_Logo_Primary_White-9941x3975-5e16c90.png";
-import SponsorLogoWhite from "../../assets/sponsor_logos/logowhite.svg";
-import OptionsLogo from "../../assets/sponsor_logos/optionslogo.svg";
-import KainosLogo from "../../assets/sponsor_logos/Kainos.webp";
-import OrmeauLabsLogo from "../../assets/sponsor_logos/ormeau-labs-white.svg";
-import TrinityLogo from "../../assets/sponsor_logos/Trinity-logo-White.png";
-import QUBLogo from "../../assets/sponsor_logos/qub logo.png";
-import ElevenLabsLogo from "../../assets/sponsor_logos/elevenlabs (1)-Photoroom.png";
-import VirtuFinancialLogo from "../../assets/sponsor_logos/Virtu_Financial_logo.png";
-import MLHLogo from "../../assets/sponsor_logos/mlh-logo-color.png";
-import Nazzal from "../../assets/team/Nazzal.png";
-import Raj from "../../assets/team/Raj.png";
-import Abdul from "../../assets/team/abdul.jpeg";
-import Catlin from "../../assets/team/Catlin.jpeg";
-import TimChan from "../../assets/team/timchan.jpeg";
-import OisinImg from "../../assets/team/Oisin.jpeg";
-import OlliverBilling from "../../assets/team/Oliver Billing.jpeg";
-import KyanCassidy from "../../assets/team/Kyan Cassidy.jpeg";
-import Mayukh from "../../assets/team/mayukh.jpg";
-import Christy from "../../assets/team/christy.jpg";
-import Catherine from "../../assets/team/catherine.jpg";
-import Grace from "../../assets/team/grace.jpg";
+import * as Images from "./assets";
 
 const Landing = () => {
   const tracks = [
@@ -92,113 +69,105 @@ const Landing = () => {
   ];
 
   const sponsors = [
-    { name: "Patch", logo: PatchLogo, logoClass: "h-10 md:h-11" },
+    { name: "Patch", logo: Images.PatchLogo, logoClass: "h-10 md:h-11" },
     {
       name: "EquipmentShare",
-      logo: EquipmentShareLogo,
+      logo: Images.EquipmentShareLogo,
       logoClass: "h-14 md:h-16",
     },
     {
       name: "Techstars",
-      logo: TechstarsLogo,
+      logo: Images.TechstarsLogo,
       logoClass: "h-[7.3125rem] md:h-[8.775rem]",
     },
-    { name: "Ormeau Labs", logo: OrmeauLabsLogo, logoClass: "h-16 md:h-20" },
-    { name: "Trinity", logo: TrinityLogo, logoClass: "h-24 md:h-28" },
-    { name: "Logo White", logo: SponsorLogoWhite, logoClass: "h-8 md:h-10" },
-    { name: "Options IT", logo: OptionsLogo, logoClass: "h-16 md:h-20" },
-    { name: "Kainos", logo: KainosLogo, logoClass: "h-20 md:h-24" },
-    { name: "Queen's University Belfast", logo: QUBLogo, logoClass: "h-20 md:h-24" },
-    { name: "ElevenLabs", logo: ElevenLabsLogo, logoClass: "h-24 md:h-28" },
-    { name: "Virtu Financial", logo: VirtuFinancialLogo, logoClass: "h-16 md:h-20" },
-    { name: "MLH", logo: MLHLogo, logoClass: "h-20 md:h-24" },
+    { name: "Ormeau Labs", logo: Images.OrmeauLabsLogo, logoClass: "h-16 md:h-20" },
+    { name: "Trinity", logo: Images.TrinityLogo, logoClass: "h-24 md:h-28" },
+    { name: "Logo White", logo: Images.SponsorLogoWhite, logoClass: "h-8 md:h-10" },
+    { name: "Options IT", logo: Images.OptionsLogo, logoClass: "h-16 md:h-20" },
+    { name: "Kainos", logo: Images.KainosLogo, logoClass: "h-20 md:h-24" },
+    { name: "Queen's University Belfast", logo: Images.QUBLogo, logoClass: "h-20 md:h-24" },
+    { name: "ElevenLabs", logo: Images.ElevenLabsLogo, logoClass: "h-24 md:h-28" },
+    { name: "Virtu Financial", logo: Images.VirtuFinancialLogo, logoClass: "h-16 md:h-20" },
+    { name: "MLH", logo: Images.MLHLogo, logoClass: "h-20 md:h-24" },
   ];
 
   const team = [
     {
       name: "Ahmed Nazzal",
       role: "Lead Organiser",
-      image: Nazzal,
+      image: Images.Nazzal,
       linkedin: "https://www.linkedin.com/in/a-nazzal/",
     },
     {
       name: "Caitlin O'Neill",
       role: "Logistics Lead",
-      image: Catlin,
+      image: Images.Catlin,
       linkedin: "https://www.linkedin.com/in/caitlin-o%E2%80%99neill-83baa229b/",
     },
     {
       name: "Abdulrahman Dessisa",
       role: "Marketing Lead",
-      image: Abdul,
+      image: Images.Abdul,
       linkedin: "https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/",
     },
     {
       name: "Raj Aryan Upadhyaya",
       role: "Advisor",
-      image: Raj,
+      image: Images.Raj,
       linkedin: "https://www.linkedin.com/in/raupadhyaya04/",
     },
     {
       name: "Oisin McAlinden",
       role: "Head of Partnership and Finance",
-      image: OisinImg,
+      image: Images.OisinImg,
       linkedin: "https://www.linkedin.com/in/oisin-mcalinden-3b6a8a2a4/",
     },
     {
       name: "Tim Chan",
       role: "Advisor",
-      image: TimChan,
+      image: Images.TimChan,
       linkedin: "https://www.linkedin.com/in/chuntimchan/",
     },
     {
       name: "Oliver Billing",
       role: "Fintech Track Head",
-      image: OlliverBilling,
+      image: Images.OlliverBilling,
       linkedin: "https://www.linkedin.com/in/oliver-billing49161205/",
     },
     {
       name: "Kyan Cassidy",
       role: "Fintech Track Head",
-      image: KyanCassidy,
+      image: Images.KyanCassidy,
       linkedin: "https://www.linkedin.com/in/kyan-cassidy/",
     },
     {
       name: "Mayukh Banerjee",
       role: "Logistics",
-      image: Mayukh,
+      image: Images.Mayukh,
       linkedin: "https://www.linkedin.com/in/baneerjem/",
     },
     {
       name: "Christy Chovalloor",
       role: "Logistics",
-      image: Christy,
+      image: Images.Christy,
       linkedin: "https://www.linkedin.com/in/cchovalloor/",
     },
     {
       name: "Catherine Kane",
       role: "Logistics",
-      image: Catherine,
+      image: Images.Catherine,
       linkedin: "https://www.linkedin.com/in/catherine-kane-90bb82238/",
     },
     {
       name: "Grace Coyle",
       role: "Logistics",
-      image: Grace,
+      image: Images.Grace,
       linkedin: "https://www.linkedin.com/in/grace-coyle-671718270/",
     },
   ];
 
   return (
-    <div className="relative isolate min-h-screen text-zinc-100">
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-zinc-950" />
-      <div className="pointer-events-none fixed inset-0 -z-10 opacity-36 md:opacity-52 [background-image:radial-gradient(circle,rgba(255,255,255,0.9)_2.1px,transparent_2.5px)] [background-size:28px_28px] md:[background-size:18px_18px] [mask-image:radial-gradient(60rem_34rem_at_52%_34%,black_0%,transparent_76%)] [animation:matrix-drift_32s_linear_infinite]" />
-      <div className="pointer-events-none fixed inset-0 -z-10 opacity-14 md:opacity-24 [background-image:radial-gradient(circle,rgba(255,255,255,0.82)_1.9px,transparent_2.3px)] [background-size:34px_34px] md:[background-size:24px_24px] [mask-image:radial-gradient(34rem_22rem_at_18%_72%,black_0%,transparent_80%)]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-16 md:opacity-30 [background-image:radial-gradient(circle,rgba(251,146,60,0.95)_2px,transparent_2.4px)] [background-size:30px_30px] md:[background-size:18px_18px] [mask-image:radial-gradient(44rem_26rem_at_78%_22%,black_0%,transparent_82%)] [animation:matrix-drift_24s_linear_infinite]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 h-[160vh] -z-10 opacity-14 md:opacity-26 [background-image:radial-gradient(circle,rgba(217,70,239,0.94)_2px,transparent_2.4px)] [background-size:32px_32px] md:[background-size:20px_20px] [mask-image:radial-gradient(40rem_24rem_at_20%_78%,black_0%,transparent_84%)] [animation:matrix-drift_36s_linear_infinite]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 hidden h-[160vh] -z-10 opacity-24 md:block [background-image:radial-gradient(circle,rgba(244,63,94,0.92)_1.9px,transparent_2.3px)] [background-size:16px_16px] [mask-image:radial-gradient(38rem_22rem_at_50%_54%,black_0%,transparent_86%)] [animation:matrix-drift_28s_linear_infinite_reverse]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 hidden h-[160vh] -z-10 opacity-22 md:block [background-image:radial-gradient(circle,rgba(253,224,71,0.92)_1.9px,transparent_2.3px)] [background-size:19px_19px] [mask-image:radial-gradient(34rem_20rem_at_66%_72%,black_0%,transparent_86%)] [animation:matrix-drift_34s_linear_infinite]" />
-      <div className="pointer-events-none absolute top-0 left-0 right-0 hidden h-[160vh] -z-10 opacity-18 md:block [background-image:radial-gradient(circle,rgba(126,34,206,0.9)_1.8px,transparent_2.2px)] [background-size:21px_21px] [mask-image:radial-gradient(34rem_20rem_at_14%_30%,black_0%,transparent_84%)] [animation:matrix-drift_42s_linear_infinite_reverse]" />
+    <div className="relative isolate min-h-screen text-zinc-100 bg-transparent">
       <section id="home" className="relative isolate w-full overflow-hidden">
         <div className="mx-auto flex min-h-[680px] max-w-7xl items-center px-4 pt-20 pb-16 lg:min-h-[780px] lg:pt-24 lg:pb-20">
           <div className="relative z-10 grid w-full gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -277,9 +246,9 @@ const Landing = () => {
 
       <section
         id="tracks"
-        className="mt-32 w-full bg-zinc-950 py-10 lg:mt-40 lg:py-12"
+        className="mt-32 w-full py-10 lg:mt-40 lg:py-12"
       >
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="relative z-20 mx-auto w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm">
           <div className="mb-8 flex items-end justify-between gap-6 md:mb-10">
             <div>
               <h2 className="text-3xl font-semibold uppercase tracking-wide md:text-4xl">
@@ -301,9 +270,9 @@ const Landing = () => {
         </div>
       </section>
 
-      <section id="sponsors" className="relative w-full py-14 lg:py-20">
-        <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent_0%,rgba(9,9,11,0.97)_10%,rgba(9,9,11,0.97)_92%,transparent_100%)]" />
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <section id="sponsors" className="relative w-full py-14 lg:py-20 flex items-center justify-center bg-transparent">
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-transparent" />
+        <div className="relative z-20 mx-auto w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm">
           <h2 className="text-3xl font-semibold uppercase tracking-wide md:text-4xl">
             Sponsors
           </h2>
@@ -330,7 +299,7 @@ const Landing = () => {
 
       <FAQs />
 
-      <section id="team" className="mx-auto mt-6 max-w-7xl px-4 pb-6">
+      <section id="team" className="relative z-20 mx-auto mt-6 w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 pb-6 rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm">
         <h2 className="text-center text-3xl font-semibold uppercase tracking-wide md:text-4xl">
           Organising Team
         </h2>
