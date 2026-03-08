@@ -49,19 +49,21 @@ const Header = () => {
           </span>
         )}
 
-        <nav
-          className={`hidden items-center gap-6 md:flex absolute left-1/2 transform -translate-x-1/2`}
-        >
-          {sectionItems.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              className="text-base font-medium text-zinc-300 transition hover:text-zinc-100"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        {useLandingNavbar && (
+          <nav
+            className="hidden items-center gap-6 md:flex absolute left-1/2 transform -translate-x-1/2"
+          >
+            {sectionItems.map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                className="text-base font-medium text-zinc-300 transition hover:text-zinc-100"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        )}
 
         <div className="flex items-center gap-2 md:gap-4">
           <NavLink
