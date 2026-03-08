@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 const ReactiveBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const scrollRef = useRef(0);
+  // const scrollRef = useRef(0);
 
   useEffect(() => {
     const canvas = canvasRef.current;
