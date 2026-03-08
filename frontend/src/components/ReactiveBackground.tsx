@@ -18,7 +18,7 @@ const ReactiveBackground = () => {
       { r: 79, g: 73, b: 102 }, // lavender
       { r: 61, g: 91, b: 102 }, // blue
       { r: 75, g: 96, b: 75 }, // green
-      { r: 92, g: 96, b: 55 }, // olive
+      // { r: 92, g: 96, b: 55 }, // olive
     ];
 
     let targetScroll = 0;
