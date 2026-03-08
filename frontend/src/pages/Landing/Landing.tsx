@@ -80,14 +80,34 @@ const Landing = () => {
       logo: Images.TechstarsLogo,
       logoClass: "h-[7.3125rem] md:h-[8.775rem]",
     },
-    { name: "Ormeau Labs", logo: Images.OrmeauLabsLogo, logoClass: "h-16 md:h-20" },
+    {
+      name: "Ormeau Labs",
+      logo: Images.OrmeauLabsLogo,
+      logoClass: "h-16 md:h-20",
+    },
     { name: "Trinity", logo: Images.TrinityLogo, logoClass: "h-24 md:h-28" },
-    { name: "Logo White", logo: Images.SponsorLogoWhite, logoClass: "h-8 md:h-10" },
+    {
+      name: "Logo White",
+      logo: Images.SponsorLogoWhite,
+      logoClass: "h-8 md:h-10",
+    },
     { name: "Options IT", logo: Images.OptionsLogo, logoClass: "h-16 md:h-20" },
     { name: "Kainos", logo: Images.KainosLogo, logoClass: "h-20 md:h-24" },
-    { name: "Queen's University Belfast", logo: Images.QUBLogo, logoClass: "h-20 md:h-24" },
-    { name: "ElevenLabs", logo: Images.ElevenLabsLogo, logoClass: "h-24 md:h-28" },
-    { name: "Virtu Financial", logo: Images.VirtuFinancialLogo, logoClass: "h-16 md:h-20" },
+    {
+      name: "Queen's University Belfast",
+      logo: Images.QUBLogo,
+      logoClass: "h-20 md:h-24",
+    },
+    {
+      name: "ElevenLabs",
+      logo: Images.ElevenLabsLogo,
+      logoClass: "h-24 md:h-28",
+    },
+    {
+      name: "Virtu Financial",
+      logo: Images.VirtuFinancialLogo,
+      logoClass: "h-16 md:h-20",
+    },
     { name: "MLH", logo: Images.MLHLogo, logoClass: "h-20 md:h-24" },
   ];
 
@@ -102,7 +122,8 @@ const Landing = () => {
       name: "Caitlin O'Neill",
       role: "Logistics Lead",
       image: Images.Catlin,
-      linkedin: "https://www.linkedin.com/in/caitlin-o%E2%80%99neill-83baa229b/",
+      linkedin:
+        "https://www.linkedin.com/in/caitlin-o%E2%80%99neill-83baa229b/",
     },
     {
       name: "Abdulrahman Dessisa",
@@ -111,16 +132,16 @@ const Landing = () => {
       linkedin: "https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/",
     },
     {
-      name: "Raj Aryan Upadhyaya",
-      role: "Advisor",
-      image: Images.Raj,
-      linkedin: "https://www.linkedin.com/in/raupadhyaya04/",
-    },
-    {
       name: "Oisin McAlinden",
       role: "Head of Partnership and Finance",
       image: Images.OisinImg,
       linkedin: "https://www.linkedin.com/in/oisin-mcalinden-3b6a8a2a4/",
+    },
+    {
+      name: "Raj Aryan Upadhyaya",
+      role: "Advisor",
+      image: Images.Raj,
+      linkedin: "https://www.linkedin.com/in/raupadhyaya04/",
     },
     {
       name: "Tim Chan",
@@ -207,7 +228,7 @@ const Landing = () => {
                 </a>
               </div>
             </div>
-            <div className="bg-zinc-950 p-6 md:p-8">
+            <div className="bg-zinc-950 p-6 md:p-8 rounded-2xl border border-zinc-800">
               <CountdownTimer />
             </div>
           </div>
@@ -244,10 +265,7 @@ const Landing = () => {
       </section>
       */}
 
-      <section
-        id="tracks"
-        className="mt-32 w-full py-10 lg:mt-40 lg:py-12"
-      >
+      <section id="tracks" className="mt-32 w-full py-10 lg:mt-40 lg:py-12">
         <div className="relative z-20 mx-auto w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm">
           <div className="mb-8 flex items-end justify-between gap-6 md:mb-10">
             <div>
@@ -270,7 +288,10 @@ const Landing = () => {
         </div>
       </section>
 
-      <section id="sponsors" className="relative w-full py-14 lg:py-20 flex items-center justify-center bg-transparent">
+      <section
+        id="sponsors"
+        className="relative w-full py-14 lg:py-20 flex items-center justify-center bg-transparent"
+      >
         <div className="pointer-events-none absolute inset-0 -z-10 bg-transparent" />
         <div className="relative z-20 mx-auto w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm">
           <h2 className="text-3xl font-semibold uppercase tracking-wide md:text-4xl">
@@ -299,7 +320,10 @@ const Landing = () => {
 
       <FAQs />
 
-      <section id="team" className="relative z-20 mx-auto mt-6 w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 pb-6 rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm">
+      <section
+        id="team"
+        className="relative z-20 mx-auto mt-6 w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 pb-6 rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm"
+      >
         <h2 className="text-center text-3xl font-semibold uppercase tracking-wide md:text-4xl">
           Organising Team
         </h2>
