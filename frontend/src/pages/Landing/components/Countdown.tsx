@@ -47,7 +47,7 @@ const CountdownTimer = () => {
 
   return (
     <div className="w-full">
-      <div className="mb-7 flex items-end justify-between gap-4 border-b border-zinc-800 pb-4">
+      <div className="mb-7 flex items-end justify-between gap-4 border-b border-zinc-800 pb-4 bgcolor-yellow">
         <div>
           <h2 className="text-2xl font-semibold uppercase tracking-wide md:text-3xl">
             Starts In
@@ -63,9 +63,12 @@ const CountdownTimer = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 rounded-lg ">
         {countdownBlocks.map((block) => (
-          <div key={block.label} className="bg-zinc-950 p-4 text-center md:p-5">
+          <div
+            key={block.label}
+            className="bg-zinc-950 p-4 text-center md:p-5 rounded-lg"
+          >
             <div className="text-4xl font-semibold text-zinc-100 md:text-5xl">
               {String(block.value).padStart(2, "0")}
             </div>
@@ -80,4 +83,3 @@ const CountdownTimer = () => {
 };
 
 export default CountdownTimer;
-
