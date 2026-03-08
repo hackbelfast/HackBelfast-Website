@@ -71,12 +71,6 @@ const Header = () => {
             Register
           </NavLink>
 
-          <Link
-            to="/#tracks"
-            className="rounded-lg border border-zinc-700 px-3 py-2 text-sm font-medium text-zinc-200 md:hidden"
-          >
-            Tracks
-          </Link>
           <NavLink
             to="/register"
             className="inline-flex md:hidden items-center justify-center rounded-lg bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 px-4 py-2 text-base font-semibold text-zinc-950 transition hover:from-orange-200 hover:via-pink-200 hover:to-violet-200"
