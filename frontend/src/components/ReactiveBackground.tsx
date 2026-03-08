@@ -15,10 +15,10 @@ const ReactiveBackground = () => {
     canvas.height = window.innerHeight;
 
     const colors = [
-      { r: 79, g: 73, b: 102 }, // even darker lavender
-      { r: 61, g: 91, b: 102 }, // even darker blue
-      { r: 75, g: 96, b: 75 }, // even darker green
-      { r: 106, g: 93, b: 29 }, // even darker yellow
+      { r: 79, g: 73, b: 102 }, // lavender
+      { r: 61, g: 91, b: 102 }, // blue
+      { r: 75, g: 96, b: 75 }, // green
+      { r: 92, g: 96, b: 55 }, // olive
     ];
 
     let targetScroll = 0;
