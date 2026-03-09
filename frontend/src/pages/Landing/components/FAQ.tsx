@@ -23,7 +23,12 @@ const FAQ = () => {
       question:
         "What are these tracks and do I need to be studying that to compete?",
       answer:
-        "Hell no! The tracks (Fintech, AI/ML, MedTech, Sustainability) are just themes to help you focus. You don't need to be studying finance to build a fintech app or studying medicine to do MedTech. Pick the problem domain that excites you most - we'll provide mentors and resources to help you learn as you build.",
+        "Hell no! The tracks (Builder, Non-Builder, Fintech) are just lanes to help you focus. You don't need a specific background to participate; pick what excites you most, and we'll have mentors and resources to help you build. Challenges will be tailored to each track, with examples like Best Sustainability Solution, Best Cybersecurity Implementation, or Best AI Integration. These are just examples; the actual prize categories will be determined and shared on the day of the hackathon.",
+    },
+    {
+      question: "Who can participate?",
+      answer:
+        "University students, industry professionals, and anyone who wants to participate is welcome to join. You are not required to stay on the premises overnight, but you can if you want to.",
     },
     {
       question: "What's the overall format?",
@@ -37,7 +42,10 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="bg-transparent px-4 py-24 lg:py-32 flex items-center justify-center">
+    <section
+      id="faq"
+      className="bg-transparent px-4 py-24 lg:py-32 flex items-center justify-center"
+    >
       <div className="relative z-20 w-full lg:w-[65%] mx-auto rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm p-6 md:p-8">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4 border-b border-zinc-800 pb-6">
           <h2 className="text-4xl font-semibold uppercase tracking-wide md:text-5xl">
