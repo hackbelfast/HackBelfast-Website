@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { REGISTER_FORM_URL } from '../../constants/register'
 
 const Judging = () => {
   const [activeView, setActiveView] = useState<'hacker' | 'judge'>('hacker')
@@ -680,12 +681,23 @@ const Judging = () => {
               ? "Now that you understand our VC-style evaluation framework, select your track and start building a venture that institutional investors would fund."
               : "Apply to be a judge and gain real-world experience evaluating early-stage ventures using institutional frameworks."}
           </p>
-          <Link
-            to={activeView === 'hacker' ? '/tracks' : '/register'}
-            className="inline-block bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 hover:from-yellow-500 hover:via-orange-600 hover:to-pink-600 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
-          >
-            {activeView === 'hacker' ? 'Explore Competition Tracks' : 'Apply to Judge'}
-          </Link>
+          {activeView === 'hacker' ? (
+            <Link
+              to="/tracks"
+              className="inline-block bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 hover:from-yellow-500 hover:via-orange-600 hover:to-pink-600 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
+            >
+              Explore Competition Tracks
+            </Link>
+          ) : (
+            <a
+              href={REGISTER_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 hover:from-yellow-500 hover:via-orange-600 hover:to-pink-600 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
+            >
+              Apply to Judge
+            </a>
+          )}
         </div>
       </section>
     </div>

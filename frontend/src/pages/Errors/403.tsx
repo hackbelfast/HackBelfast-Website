@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { REGISTER_FORM_URL } from '../../constants/register'
 
 const Forbidden = () => {
   return (
@@ -46,15 +47,17 @@ const Forbidden = () => {
             <span>Back to Home</span>
           </Link>
 
-          <Link
-            to="/register"
+          <a
+            href={REGISTER_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 border-2 border-red-500 text-white font-bold rounded-lg hover:bg-red-500/10 hover:scale-105 transition-all duration-200"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
             </svg>
             <span>Register Instead</span>
-          </Link>
+          </a>
         </div>
 
         {/* Subtle hint */}

@@ -1,6 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import logo from "../assets/HackBelfast_logo.png";
+import { REGISTER_FORM_URL } from "../constants/register";
 
 const Header = () => {
   const location = useLocation();
@@ -66,19 +67,23 @@ const Header = () => {
         )}
 
         <div className="flex items-center gap-2 md:gap-4">
-          <NavLink
-            to="/register"
+          <a
+            href={REGISTER_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-block rounded-lg bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 px-4 py-2 text-base font-semibold text-zinc-950 transition hover:from-orange-200 hover:via-pink-200 hover:to-violet-200"
           >
             Register
-          </NavLink>
+          </a>
 
-          <NavLink
-            to="/register"
+          <a
+            href={REGISTER_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex md:hidden items-center justify-center rounded-lg bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 px-4 py-2 text-base font-semibold text-zinc-950 transition hover:from-orange-200 hover:via-pink-200 hover:to-violet-200"
           >
             Register
-          </NavLink>
+          </a>
         </div>
       </div>
     </header>

@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
 import TrackCard from "./components/Tracks";
 import FAQs from "./components/FAQ";
 import CountdownTimer from "./components/Countdown";
 import * as Images from "./assets";
+import { REGISTER_FORM_URL } from "../../constants/register";
 
 const Landing = () => {
   const tracks = [
@@ -165,6 +165,7 @@ const Landing = () => {
       name: "Su Jean Ng",
       role: "Non-Builder Track Lead",
       image: Images.SuJeanNg,
+      linkedin: "https://www.linkedin.com/in/sjeann/",
     },
     {
       name: "Mayukh Banerjee",
@@ -189,6 +190,18 @@ const Landing = () => {
       role: "Logistics",
       image: Images.Grace,
       linkedin: "https://www.linkedin.com/in/grace-coyle-671718270/",
+    },
+    {
+      name: "Lonan Rooney",
+      role: "Operations",
+      image: Images.Lonan,
+      linkedin: "https://www.linkedin.com/in/lonan-rooney-583485330/",
+    },
+    {
+      name: "Kristaps Paeglis",
+      role: "Social Media / Marketing",
+      image: Images.Kristaps,
+      linkedin: "https://www.linkedin.com/in/kristaps-paeglis/",
     },
   ];
 
@@ -220,9 +233,14 @@ const Landing = () => {
                 challenges.
               </p>
               <div className="mt-12 flex flex-wrap gap-4">
-                <Link to="/register" className="btn-primary px-8 py-3">
+                <a
+                  href={REGISTER_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary px-8 py-3"
+                >
                   Register
-                </Link>
+                </a>
                 <a
                   href="https://calendly.com/ahmednazzal1710/30min"
                   target="_blank"
@@ -380,7 +398,20 @@ const Landing = () => {
                 )}
               </div>
               <div className="p-5">
-                <p className="font-semibold">{member.name}</p>
+                <p className="font-semibold">
+                  {member.linkedin ? (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition hover:text-zinc-100"
+                    >
+                      {member.name}
+                    </a>
+                  ) : (
+                    member.name
+                  )}
+                </p>
                 <p className="text-sm text-zinc-500">{member.role}</p>
               </div>
             </article>
