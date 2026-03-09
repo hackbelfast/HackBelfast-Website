@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Nazzal from "../../assets/team/Nazzal.png"
 import Raj from "../../assets/team/Raj.png"
+import SuJeanNg from "../../assets/team/Su Jean Ng.jpeg"
 // import Abdul from "../../assets/team/Abdul.png"
 
 const About = () => {
@@ -32,6 +33,13 @@ const About = () => {
       university: "Queen's University Belfast",
       //image: Caitlin,
       linkedin: 'https://www.linkedin.com/in/',
+    },
+    {
+      name: 'Su Jean Ng',
+      role: 'Non-Builder Track Lead',
+      university: '',
+      image: SuJeanNg,
+      linkedin: '',
     },
   ]
 

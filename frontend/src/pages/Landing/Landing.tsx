@@ -162,6 +162,11 @@ const Landing = () => {
       linkedin: "https://www.linkedin.com/in/kyan-cassidy/",
     },
     {
+      name: "Su Jean Ng",
+      role: "Non-Builder Track Lead",
+      image: Images.SuJeanNg,
+    },
+    {
       name: "Mayukh Banerjee",
       role: "Logistics",
       image: Images.Mayukh,
