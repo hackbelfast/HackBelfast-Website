@@ -25,4 +25,6 @@ export { default as Mayukh } from "../../assets/team/mayukh.jpg";
 export { default as Christy } from "../../assets/team/christy.jpg";
 export { default as Catherine } from "../../assets/team/catherine.jpg";
 export { default as Grace } from "../../assets/team/grace.jpg";
+export { default as Lonan } from "../../assets/team/lonan.jpg";
 export { default as SuJeanNg } from "../../assets/team/Su Jean Ng.jpeg";
+export { default as Kristaps } from "../../assets/team/kris.jpg";

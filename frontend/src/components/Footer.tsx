@@ -1,3 +1,5 @@
+import { REGISTER_FORM_URL } from "../constants/register";
+
 const Footer = () => {
   const year = new Date().getFullYear();
 
@@ -20,7 +22,12 @@ const Footer = () => {
           </h4>
           <ul className="space-y-2 text-sm text-zinc-400">
             <li>
-              <a href="/register" className="transition hover:text-zinc-100">
+            <a
+              href={REGISTER_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-zinc-100"
+            >
                 Register
               </a>
             </li>

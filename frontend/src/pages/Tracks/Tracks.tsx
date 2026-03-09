@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { REGISTER_FORM_URL } from '../../constants/register';
 
 type Track = {
   id: string;
@@ -237,12 +238,14 @@ const Tracks = () => {
             Choose the track that best aligns with your team's skills and the problem you are most excited to solve. 
             You will confirm your track during team formation at the start of the event.
           </p>
-          <Link
-            to="/register"
+          <a
+            href={REGISTER_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50"
           >
             Register your team
-          </Link>
+          </a>
         </div>
       </div>
     </div>

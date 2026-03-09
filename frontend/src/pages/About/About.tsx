@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Nazzal from "../../assets/team/Nazzal.png"
 import Raj from "../../assets/team/Raj.png"
 import SuJeanNg from "../../assets/team/Su Jean Ng.jpeg"
+import Lonan from "../../assets/team/lonan.jpg"
 // import Abdul from "../../assets/team/Abdul.png"
 
 const About = () => {
@@ -39,7 +40,14 @@ const About = () => {
       role: 'Non-Builder Track Lead',
       university: '',
       image: SuJeanNg,
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/sjeann/',
+    },
+    {
+      name: 'Lonan Rooney',
+      role: 'Operations',
+      university: "Queen's University Belfast",
+      image: Lonan,
+      linkedin: 'https://www.linkedin.com/in/lonan-rooney-583485330/',
     },
   ]
 
@@ -230,7 +238,18 @@ const About = () => {
                 {/* Info */}
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-1 group-hover:bg-gradient-to-r group-hover:from-yellow-400 group-hover:via-pink-500 group-hover:to-purple-500 group-hover:bg-clip-text group-hover:text-transparent transition-all">
-                    {member.name}
+                    {member.linkedin ? (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block"
+                      >
+                        {member.name}
+                      </a>
+                    ) : (
+                      member.name
+                    )}
                   </h3>
                   <div className="text-sm text-pink-500 mb-2">{member.role}</div>
                   <div className="text-xs text-gray-500 mb-4">{member.university}</div>
