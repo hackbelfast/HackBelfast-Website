@@ -132,16 +132,22 @@ const Landing = () => {
       linkedin: "https://www.linkedin.com/in/oisin-mcalinden-3b6a8a2a4/",
     },
     {
-      name: "Raj Aryan Upadhyaya",
-      role: "Advisor",
-      image: Images.Raj,
-      linkedin: "https://www.linkedin.com/in/raupadhyaya04/",
+      name: "Su Jean Ng",
+      role: "Non-Builder Track Lead",
+      image: Images.SuJeanNg,
+      linkedin: "https://www.linkedin.com/in/sjeann/",
     },
     {
       name: "Tim Chan",
       role: "Advisor",
       image: Images.TimChan,
       linkedin: "https://www.linkedin.com/in/chuntimchan/",
+    },
+    {
+      name: "Raj Aryan Upadhyaya",
+      role: "Advisor",
+      image: Images.Raj,
+      linkedin: "https://www.linkedin.com/in/raupadhyaya04/",
     },
     {
       name: "Oliver Billing",
@@ -154,12 +160,6 @@ const Landing = () => {
       role: "Fintech Track Head",
       image: Images.KyanCassidy,
       linkedin: "https://www.linkedin.com/in/kyan-cassidy/",
-    },
-    {
-      name: "Su Jean Ng",
-      role: "Non-Builder Track Lead",
-      image: Images.SuJeanNg,
-      linkedin: "https://www.linkedin.com/in/sjeann/",
     },
     {
       name: "Mayukh Banerjee",
