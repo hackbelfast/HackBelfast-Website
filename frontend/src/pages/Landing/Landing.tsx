@@ -126,12 +126,6 @@ const Landing = () => {
         "https://www.linkedin.com/in/caitlin-o%E2%80%99neill-83baa229b/",
     },
     {
-      name: "Abdulrahman Dessisa",
-      role: "Marketing Lead",
-      image: Images.Abdul,
-      linkedin: "https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/",
-    },
-    {
       name: "Oisin McAlinden",
       role: "Head of Partnership and Finance",
       image: Images.OisinImg,

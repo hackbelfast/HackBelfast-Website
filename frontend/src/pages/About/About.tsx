@@ -15,13 +15,6 @@ const About = () => {
       linkedin: 'https://www.linkedin.com/in/a-nazzal/',
     },
     {
-      name: "Abdulrahman Dessisa",
-      role: 'Marketing Lead',
-      university: "Queen's University Belfast",
-      //image: Abdul,
-      linkedin: 'https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/',
-    },
-    {
       name: "Raj Aryan Upadhyaya",
       role: 'Tech Lead',
       university: "Trinity College Dublin",
