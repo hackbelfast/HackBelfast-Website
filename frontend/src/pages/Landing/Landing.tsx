@@ -69,7 +69,7 @@ const Landing = () => {
   ];
 
   const sponsors = [
-    { name: "Patch", logo: Images.PatchLogo, logoClass: "h-10 md:h-11" },
+    { name: "Patch", logo: Images.PatchLogo, logoClass: "h-15 md:h-16" },
     {
       name: "EquipmentShare",
       logo: Images.EquipmentShareLogo,
