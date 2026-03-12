@@ -102,13 +102,14 @@ const Landing = () => {
       name: "ElevenLabs",
       logo: Images.ElevenLabsLogo,
       logoClass: "h-24 md:h-28",
+      cellClass: "lg:col-start-2",
     },
     {
       name: "Virtu Financial",
       logo: Images.VirtuFinancialLogo,
       logoClass: "h-16 md:h-20",
+      cellClass: "lg:col-start-4",
     },
-    { name: "MLH", logo: Images.MLHLogo, logoClass: "h-20 md:h-24" },
   ];
 
   const team = [
@@ -318,11 +319,11 @@ const Landing = () => {
             Sponsors and community partners support the event with tooling,
             mentorship, and opportunities.
           </p>
-          <div className="mt-10 grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-6">
             {sponsors.map((sponsor) => (
               <div
                 key={sponsor.name}
-                className="flex min-h-[104px] items-center justify-center px-6 py-4"
+                className={`flex min-h-[104px] items-center justify-center px-6 py-4 lg:col-span-2 ${sponsor.cellClass ?? ""}`}
               >
                 <img
                   src={sponsor.logo}

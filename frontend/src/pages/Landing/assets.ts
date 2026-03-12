@@ -10,7 +10,6 @@ export { default as TrinityLogo } from "../../assets/sponsor_logos/Trinity-logo-
 export { default as QUBLogo } from "../../assets/sponsor_logos/qub logo.png";
 export { default as ElevenLabsLogo } from "../../assets/sponsor_logos/elevenlabs (1)-Photoroom.png";
 export { default as VirtuFinancialLogo } from "../../assets/sponsor_logos/Virtu_Financial_logo.png";
-export { default as MLHLogo } from "../../assets/sponsor_logos/mlh-logo-color.png";
 
 // Team images
 export { default as Nazzal } from "../../assets/team/Nazzal.png";
