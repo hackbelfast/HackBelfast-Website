@@ -1,5 +1,4 @@
 import { isValidElement } from "react";
-import { Featherless } from "@lobehub/icons";
 import TrackCard from "./components/Tracks";
 import FAQs from "./components/FAQ";
 import CountdownTimer from "./components/Countdown";
@@ -137,8 +136,20 @@ const Landing = () => {
     },
     {
       name: "Featherless",
-      logo: <Featherless.Combine size={56} />,
-      logoClass: "text-white",
+      logo: (
+        <div className="flex items-center gap-3">
+          <img
+            src={Images.FeatherlessIcon}
+            alt="Featherless icon"
+            className="h-10 w-auto object-contain md:h-12"
+          />
+          <img
+            src={Images.FeatherlessText}
+            alt="Featherless wordmark"
+            className="h-7 w-auto object-contain md:h-8"
+          />
+        </div>
+      ),
       cellClass: "lg:col-start-3",
     },
   ];

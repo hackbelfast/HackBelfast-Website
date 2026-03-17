@@ -11,6 +11,8 @@ export { default as QUBLogo } from "../../assets/sponsor_logos/qub logo.png";
 export { default as ElevenLabsLogo } from "../../assets/sponsor_logos/elevenlabs (1)-Photoroom.png";
 export { default as VirtuFinancialLogo } from "../../assets/sponsor_logos/Virtu_Financial_logo.png";
 export { default as SolanaLogo } from "../../assets/sponsor_logos/solana-sol-logo.svg";
+export { default as FeatherlessIcon } from "../../assets/sponsor_logos/featherless.svg";
+export { default as FeatherlessText } from "../../assets/sponsor_logos/featherless-text.svg";
 
 // Team images
 export { default as Nazzal } from "../../assets/team/Nazzal.png";
