@@ -1,3 +1,5 @@
+import { isValidElement } from "react";
+import { Featherless } from "@lobehub/icons";
 import TrackCard from "./components/Tracks";
 import FAQs from "./components/FAQ";
 import CountdownTimer from "./components/Countdown";
@@ -69,29 +71,46 @@ const Landing = () => {
   ];
 
   const sponsors = [
-    { name: "Patch", logo: Images.PatchLogo, logoClass: "h-15 md:h-16" },
+    {
+      name: "Patch",
+      logo: Images.PatchLogo,
+      logoClass: "h-15 md:h-16",
+      cellClass: "lg:col-start-1 lg:row-start-3",
+    },
     {
       name: "EquipmentShare",
       logo: Images.EquipmentShareLogo,
       logoClass: "h-14 md:h-16",
+      cellClass: "lg:col-start-3 lg:row-start-2",
     },
     {
       name: "Techstars",
       logo: Images.TechstarsLogo,
-      logoClass: "h-[7.3125rem] md:h-[8.775rem]",
+      logoClass: "h-[8.5rem] md:h-[10.5rem]",
     },
     {
       name: "Ormeau Labs",
       logo: Images.OrmeauLabsLogo,
       logoClass: "h-16 md:h-20",
+      cellClass: "lg:col-start-1 lg:row-start-4",
     },
-    { name: "Trinity", logo: Images.TrinityLogo, logoClass: "h-24 md:h-28" },
     {
-      name: "Logo White",
-      logo: Images.SponsorLogoWhite,
-      logoClass: "h-8 md:h-10",
+      name: "Trinity",
+      logo: Images.TrinityLogo,
+      logoClass: "h-24 md:h-28",
     },
-    { name: "Options IT", logo: Images.OptionsLogo, logoClass: "h-16 md:h-20" },
+    {
+      name: "Lovable",
+      logo: Images.LovableLogo,
+      logoClass: "h-8 md:h-10",
+      cellClass: "lg:col-start-5 lg:row-start-1",
+    },
+    {
+      name: "Options IT",
+      logo: Images.OptionsLogo,
+      logoClass: "h-16 md:h-20",
+      cellClass: "lg:col-start-3 lg:row-start-1",
+    },
     { name: "Kainos", logo: Images.KainosLogo, logoClass: "h-20 md:h-24" },
     {
       name: "Queen's University Belfast",
@@ -102,13 +121,25 @@ const Landing = () => {
       name: "ElevenLabs",
       logo: Images.ElevenLabsLogo,
       logoClass: "h-24 md:h-28",
-      cellClass: "lg:col-start-2",
+      cellClass: "lg:col-start-1 lg:row-start-1",
     },
     {
       name: "Virtu Financial",
       logo: Images.VirtuFinancialLogo,
       logoClass: "h-16 md:h-20",
-      cellClass: "lg:col-start-4",
+      cellClass: "lg:col-start-1 lg:row-start-2",
+    },
+    {
+      name: "Solana",
+      logo: Images.SolanaLogo,
+      logoClass: "h-14 md:h-16",
+      cellClass: "lg:col-start-5 lg:row-start-2",
+    },
+    {
+      name: "Featherless",
+      logo: <Featherless.Combine size={56} />,
+      logoClass: "text-white",
+      cellClass: "lg:col-start-3",
     },
   ];
 
@@ -325,11 +356,19 @@ const Landing = () => {
                 key={sponsor.name}
                 className={`flex min-h-[104px] items-center justify-center px-6 py-4 lg:col-span-2 ${sponsor.cellClass ?? ""}`}
               >
-                <img
-                  src={sponsor.logo}
-                  alt={`${sponsor.name} logo`}
-                  className={`mx-auto w-auto object-contain ${sponsor.logoClass ?? "h-10 md:h-11"}`}
-                />
+                {typeof sponsor.logo === "string" ? (
+                  <img
+                    src={sponsor.logo}
+                    alt={`${sponsor.name} logo`}
+                    className={`mx-auto w-auto object-contain ${sponsor.logoClass ?? "h-10 md:h-11"}`}
+                  />
+                ) : isValidElement(sponsor.logo) ? (
+                  <div
+                    className={`mx-auto flex items-center justify-center ${sponsor.logoClass ?? ""}`}
+                  >
+                    {sponsor.logo}
+                  </div>
+                ) : null}
               </div>
             ))}
           </div>
