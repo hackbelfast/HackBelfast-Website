@@ -77,9 +77,9 @@ const Landing = () => {
       cellClass: "lg:col-start-1 lg:row-start-3",
     },
     {
-      name: "EquipmentShare",
-      logo: Images.EquipmentShareLogo,
-      logoClass: "h-14 md:h-16",
+      name: "Hudson River Trading",
+      logo: Images.HudsonRiverTradingLogo,
+      logoClass: "h-20 md:h-24",
       cellClass: "lg:col-start-3 lg:row-start-2",
     },
     {
@@ -151,6 +151,12 @@ const Landing = () => {
         </div>
       ),
       cellClass: "lg:col-start-3",
+    },
+    {
+      name: "EquipmentShare",
+      logo: Images.EquipmentShareLogo,
+      logoClass: "h-14 md:h-16",
+      cellClass: "lg:col-start-5 lg:row-start-3",
     },
   ];
 

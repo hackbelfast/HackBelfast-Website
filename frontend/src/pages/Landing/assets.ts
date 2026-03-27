@@ -13,6 +13,7 @@ export { default as VirtuFinancialLogo } from "../../assets/sponsor_logos/Virtu_
 export { default as SolanaLogo } from "../../assets/sponsor_logos/solana-sol-logo.svg";
 export { default as FeatherlessIcon } from "../../assets/sponsor_logos/featherless.svg";
 export { default as FeatherlessText } from "../../assets/sponsor_logos/featherless-text.svg";
+export { default as HudsonRiverTradingLogo } from "../../assets/sponsor_logos/HRT_Primary_Logo_-_Full_Color.png";
 
 // Team images
 export { default as Nazzal } from "../../assets/team/Nazzal.png";
