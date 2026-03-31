@@ -99,12 +99,6 @@ const Landing = () => {
       logoClass: "h-24 md:h-28",
     },
     {
-      name: "Lovable",
-      logo: Images.LovableLogo,
-      logoClass: "h-8 md:h-10",
-      cellClass: "lg:col-start-5 lg:row-start-1",
-    },
-    {
       name: "Options IT",
       logo: Images.OptionsLogo,
       logoClass: "h-16 md:h-20",

@@ -2,7 +2,6 @@
 export { default as PatchLogo } from "../../assets/sponsor_logos/Patch.png";
 export { default as EquipmentShareLogo } from "../../assets/sponsor_logos/EquipmentShare_Logo_DIGITAL_Stacked_White.svg";
 export { default as TechstarsLogo } from "../../assets/sponsor_logos/Techstars_Logo_Primary_White-9941x3975-5e16c90.png";
-export { default as LovableLogo } from "../../assets/sponsor_logos/logowhite.svg";
 export { default as OptionsLogo } from "../../assets/sponsor_logos/optionslogo.svg";
 export { default as KainosLogo } from "../../assets/sponsor_logos/Kainos.webp";
 export { default as OrmeauLabsLogo } from "../../assets/sponsor_logos/ormeau-labs-white.svg";
