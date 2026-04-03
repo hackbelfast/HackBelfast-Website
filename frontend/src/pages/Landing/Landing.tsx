@@ -94,9 +94,9 @@ const Landing = () => {
       cellClass: "lg:col-start-1 lg:row-start-4",
     },
     {
-      name: "Trinity",
-      logo: Images.TrinityLogo,
-      logoClass: "h-24 md:h-28",
+      name: "Allstate",
+      logo: Images.AllstateLogo,
+      logoClass: "h-22 md:h-28",
     },
     {
       name: "Options IT",
@@ -123,9 +123,9 @@ const Landing = () => {
       cellClass: "lg:col-start-1 lg:row-start-2",
     },
     {
-      name: "Solana",
-      logo: Images.SolanaLogo,
-      logoClass: "h-14 md:h-16",
+      name: "StIreland",
+      logo: Images.StIrelandLogo,
+      logoClass: "h-24 md:h-32",
       cellClass: "lg:col-start-5 lg:row-start-2",
     },
     {
@@ -144,7 +144,6 @@ const Landing = () => {
           />
         </div>
       ),
-      cellClass: "lg:col-start-3",
     },
     {
       name: "EquipmentShare",

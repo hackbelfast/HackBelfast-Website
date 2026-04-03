@@ -5,7 +5,6 @@ export { default as TechstarsLogo } from "../../assets/sponsor_logos/Techstars_L
 export { default as OptionsLogo } from "../../assets/sponsor_logos/optionslogo.svg";
 export { default as KainosLogo } from "../../assets/sponsor_logos/Kainos.webp";
 export { default as OrmeauLabsLogo } from "../../assets/sponsor_logos/ormeau-labs-white.svg";
-export { default as TrinityLogo } from "../../assets/sponsor_logos/Trinity-logo-White.png";
 export { default as QUBLogo } from "../../assets/sponsor_logos/qub logo.png";
 export { default as ElevenLabsLogo } from "../../assets/sponsor_logos/elevenlabs (1)-Photoroom.png";
 export { default as VirtuFinancialLogo } from "../../assets/sponsor_logos/Virtu_Financial_logo.png";
@@ -13,6 +12,8 @@ export { default as SolanaLogo } from "../../assets/sponsor_logos/solana-sol-log
 export { default as FeatherlessIcon } from "../../assets/sponsor_logos/featherless.svg";
 export { default as FeatherlessText } from "../../assets/sponsor_logos/featherless-text.svg";
 export { default as HudsonRiverTradingLogo } from "../../assets/sponsor_logos/HRT_Primary_Logo_-_Full_Color.png";
+export { default as StIrelandLogo } from "../../assets/sponsor_logos/White_StIreland.svg";
+export { default as AllstateLogo } from "../../assets/sponsor_logos/drawing.svg";
 
 // Team images
 export { default as Nazzal } from "../../assets/team/Nazzal.png";
