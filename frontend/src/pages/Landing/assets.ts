@@ -14,6 +14,7 @@ export { default as FeatherlessText } from "../../assets/sponsor_logos/featherle
 export { default as HudsonRiverTradingLogo } from "../../assets/sponsor_logos/HRT_Primary_Logo_-_Full_Color.png";
 export { default as StIrelandLogo } from "../../assets/sponsor_logos/White_StIreland.svg";
 export { default as AllstateLogo } from "../../assets/sponsor_logos/drawing.svg";
+export { default as OpenAILogo } from "../../assets/sponsor_logos/OpenAI-white-monoblossom.svg";
 
 // Team images
 export { default as Nazzal } from "../../assets/team/Nazzal.png";

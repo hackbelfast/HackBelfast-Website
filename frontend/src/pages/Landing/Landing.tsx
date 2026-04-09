@@ -106,9 +106,9 @@ const Landing = () => {
     },
     { name: "Kainos", logo: Images.KainosLogo, logoClass: "h-20 md:h-24" },
     {
-      name: "Queen's University Belfast",
-      logo: Images.QUBLogo,
-      logoClass: "h-20 md:h-24",
+      name: "EquipmentShare",
+      logo: Images.EquipmentShareLogo,
+      logoClass: "h-14 md:h-16",
     },
     {
       name: "ElevenLabs",
@@ -146,10 +146,15 @@ const Landing = () => {
       ),
     },
     {
-      name: "EquipmentShare",
-      logo: Images.EquipmentShareLogo,
-      logoClass: "h-14 md:h-16",
+      name: "OpenAI",
+      logo: Images.OpenAILogo,
+      logoClass: "h-16 md:h-20",
       cellClass: "lg:col-start-5 lg:row-start-3",
+    },
+    {
+      name: "Queen's University Belfast",
+      logo: Images.QUBLogo,
+      logoClass: "h-20 md:h-24",
     },
   ];
 
@@ -166,6 +171,12 @@ const Landing = () => {
       image: Images.Catlin,
       linkedin:
         "https://www.linkedin.com/in/caitlin-o%E2%80%99neill-83baa229b/",
+    },
+    {
+      name: "Abdul Desissa",
+      role: "Marketing Lead",
+      image: Images.Abdul,
+      linkedin: "https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/",
     },
     {
       name: "Oisin McAlinden",
