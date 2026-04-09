@@ -148,7 +148,7 @@ const Landing = () => {
     {
       name: "OpenAI",
       logo: Images.OpenAILogo,
-      logoClass: "h-16 md:h-20",
+      logoClass: "h-20 md:h-24",
       cellClass: "lg:col-start-5 lg:row-start-3",
     },
     {
