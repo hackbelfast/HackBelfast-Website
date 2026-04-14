@@ -16,7 +16,7 @@ type Track = {
 
 const tracks: Track[] = [
   {
-    id: 'fintech',
+    id: 'quant',
     icon: (
       <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -26,7 +26,7 @@ const tracks: Track[] = [
     gradient: 'from-yellow-400 to-orange-500',
     description: 'Build innovative financial technology solutions that revolutionize how we interact with money.',
     longDescription:
-      "The finance/fintech track is perfect for teams interested in transforming the financial services industry. Whether you're building payment platforms, trading algorithms, personal finance apps, or blockchain-based solutions, this track welcomes all financial innovation.",
+      "The quant track is perfect for teams interested in transforming the financial services industry. Whether you're building payment platforms, trading algorithms, personal finance apps, or blockchain-based solutions, this track welcomes all financial innovation.",
     examples: [
       'Payment processing systems',
       'Robo-advisors and investment platforms',
@@ -37,7 +37,7 @@ const tracks: Track[] = [
     ],
     tools: ['Stripe', 'Plaid', 'Alpaca API', 'Web3.js', 'Ethers.js', 'Firebase'],
     prizes:
-      'Top fintech projects receive mentorship from investors and operators, plus fast-tracked consideration for VCIC-style showcase slots.',
+      'Top quant projects receive mentorship from investors and operators, plus fast-tracked consideration for VCIC-style showcase slots.',
     vcicNote: true,
   },
   {

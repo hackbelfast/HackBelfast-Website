@@ -23,7 +23,7 @@ const FAQ = () => {
       question:
         "What are these tracks and do I need to be studying that to compete?",
       answer:
-        "Hell no! The tracks (Builder, Non-Builder, Fintech) are just lanes to help you focus. You don't need a specific background to participate; pick what excites you most, and we'll have mentors and resources to help you build. Challenges will be tailored to each track, with examples like Best Sustainability Solution, Best Cybersecurity Implementation, or Best AI Integration. These are just examples; the actual prize categories will be determined and shared on the day of the hackathon.",
+        "Hell no! The tracks (Builder, Non-Builder, Quant) are just lanes to help you focus. You don't need a specific background to participate; pick what excites you most, and we'll have mentors and resources to help you build. Challenges will be tailored to each track, with examples like Best Sustainability Solution, Best Cybersecurity Implementation, or Best AI Integration. These are just examples; the actual prize categories will be determined and shared on the day of the hackathon.",
     },
     {
       question: "Who can participate?",

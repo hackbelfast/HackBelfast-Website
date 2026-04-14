@@ -65,7 +65,7 @@ const Landing = () => {
       ),
       title: "Quant",
       description:
-        " The Fintech challenge is a quant styled model and portfolio engineering competition. Teams receive a custom dataset containing daily features for a UK large and mid cap equity universe across roughly 10 to 15 years. Submissions are evaluated on a hidden out-of-sample period, and final judging blends quantitative performance with the clarity, credibility, and communication of the team’s model rationale and analysis.",
+        "Virtu Financial’s modelling challenge is designed for anyone who loves digging into data and thinking creatively under pressure. Competitors will analyse datasets and develop innovative solutions. It’s less about what you know, and more about how you think.",
     },
   ];
 
@@ -204,13 +204,13 @@ const Landing = () => {
     },
     {
       name: "Oliver Billing",
-      role: "Fintech Track Head",
+      role: "Quant Track Head",
       image: Images.OlliverBilling,
       linkedin: "https://www.linkedin.com/in/oliver-billing49161205/",
     },
     {
       name: "Kyan Cassidy",
-      role: "Fintech Track Head",
+      role: "Quant Track Head",
       image: Images.KyanCassidy,
       linkedin: "https://www.linkedin.com/in/kyan-cassidy/",
     },
