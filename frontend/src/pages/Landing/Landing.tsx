@@ -100,13 +100,15 @@ const Landing = () => {
 
   return (
     <div className="relative isolate min-h-screen text-zinc-100 bg-transparent">
+      {/* Hero is sized entirely in vw on md+ so it scales as one fixed
+          composition and nothing drifts when the browser zoom changes. */}
       <section
         id="home"
-        className="relative isolate flex min-h-[calc(100vh-5rem)] items-center overflow-hidden bg-[#191919] text-white"
+        className="relative isolate flex min-h-[calc(100vh-5rem)] items-center overflow-hidden bg-[#191919] text-white md:h-[52.8vw] md:min-h-0"
       >
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-[position:65%_center] opacity-30 mix-blend-screen"
+          className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-[position:65%_center] opacity-30 mix-blend-screen md:bg-[length:100%_100%] md:bg-center"
           style={{ backgroundImage: `url(${topography})` }}
         />
 
@@ -115,25 +117,25 @@ const Landing = () => {
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 -z-10 hidden md:block"
         >
-          <div className="absolute inset-y-0 left-[71%] w-px bg-white/25" />
-          <div className="absolute inset-x-0 top-[73%] h-px bg-white/25" />
-          <div className="absolute left-[71%] top-[73%] h-5 w-5 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-[#F89F2F] via-[#E03FAE] to-[#6E2BC8]" />
-          <p className="absolute left-[calc(71%+1.5rem)] top-[calc(73%+0.75rem)] font-mono text-xs tracking-wide text-white/40 lg:text-sm">
+          <div className="absolute inset-y-0 left-[71.07vw] w-px bg-white/25" />
+          <div className="absolute inset-x-0 top-[38.95vw] h-px bg-white/25" />
+          <div className="absolute left-[71.07vw] top-[38.95vw] h-[0.79vw] w-[0.79vw] -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-[#F89F2F] via-[#E03FAE] to-[#6E2BC8]" />
+          <p className="absolute left-[71.92vw] top-[39.3vw] whitespace-nowrap font-mono text-[0.62vw] tracking-wide text-white/40">
             X: 5.9301° · Y: 54.5973°
           </p>
         </div>
 
-        <div className="w-full px-4 py-24 sm:px-[7.25vw]">
-          <h1 className="whitespace-nowrap font-wordmark text-[clamp(2.5rem,12.5vw,15rem)] font-bold leading-none tracking-[-0.02em] md:text-[clamp(2.5rem,11.25vw,15rem)]">
+        <div className="w-full px-4 py-24 md:absolute md:left-[7.33vw] md:top-[16.3vw] md:w-auto md:p-0">
+          <h1 className="whitespace-nowrap font-wordmark text-[12.5vw] font-bold leading-none tracking-[-0.02em] md:text-[9.27vw]">
             HackBelfast
             <BelfastMark className="ml-[0.08em] inline-block h-[1em] w-[1.08em] align-[-0.15em]" />
           </h1>
-          <div className="mt-14 flex flex-col gap-5 sm:flex-row sm:gap-[3vw] md:mt-[5vw]">
+          <div className="mt-14 flex flex-col gap-5 sm:flex-row md:mt-[6.05vw] md:gap-[3.04vw]">
             <a
               href={JOIN_TEAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-3 rounded-lg border-[3px] border-transparent [background-origin:border-box] bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 px-8 py-5 font-display text-lg font-semibold text-zinc-950 transition hover:from-orange-200 hover:via-pink-200 hover:to-violet-200 sm:w-[min(23vw,28rem)] sm:min-w-[14rem] md:py-[1.6vw] md:text-[clamp(1.125rem,1.6vw,2rem)]"
+              className="group inline-flex items-center justify-center gap-3 rounded-lg border-[3px] border-transparent [background-origin:border-box] bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 px-8 py-5 font-display text-lg font-semibold text-zinc-950 transition hover:from-orange-200 hover:via-pink-200 hover:to-violet-200 sm:min-w-[14rem] md:h-[4.56vw] md:w-[17.45vw] md:min-w-0 md:gap-[0.6vw] md:rounded-[0.42vw] md:border-[0.15vw] md:p-0 md:text-[1.15vw]"
             >
               Join the team
               <span
@@ -147,7 +149,7 @@ const Landing = () => {
               href={SPONSOR_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg border-[3px] border-white bg-transparent px-8 py-5 font-display text-lg font-semibold text-white transition hover:bg-white hover:text-black sm:w-[min(23vw,28rem)] sm:min-w-[14rem] md:py-[1.6vw] md:text-[clamp(1.125rem,1.6vw,2rem)]"
+              className="inline-flex items-center justify-center rounded-lg border-[3px] border-white bg-transparent px-8 py-5 font-display text-lg font-semibold text-white transition hover:bg-white hover:text-black sm:min-w-[14rem] md:h-[4.56vw] md:w-[17.45vw] md:min-w-0 md:rounded-[0.42vw] md:border-[0.15vw] md:p-0 md:text-[1.15vw]"
             >
               Sponsor
             </a>
