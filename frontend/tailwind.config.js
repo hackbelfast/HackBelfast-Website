@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        wordmark: ['"Inter Tight"', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        mono: ['"Space Mono"', 'ui-monospace', 'monospace'],
+      },
       colors: {
         'hack-yellow': '#FFD93D',
         'hack-orange': '#FF8C42',

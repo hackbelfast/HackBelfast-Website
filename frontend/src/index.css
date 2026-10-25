@@ -8,15 +8,14 @@
   }
 
   body {
-    @apply bg-zinc-950 text-zinc-100 font-sans antialiased;
-    background-image:
-      linear-gradient(
-        to bottom right,
-        rgba(56, 189, 248, 0.05),
-        transparent 40%
-      ),
-      radial-gradient(circle at 90% 8%, rgba(15, 23, 42, 0.7), transparent 35%);
+    @apply bg-[#191919] text-zinc-100 font-sans antialiased;
     min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
   }
 
   @keyframes matrix-drift {

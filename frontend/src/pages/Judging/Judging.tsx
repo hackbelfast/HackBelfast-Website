@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { REGISTER_FORM_URL } from '../../constants/register'
 
@@ -678,16 +677,18 @@ const Judging = () => {
           </h2>
           <p className="text-gray-300 text-lg mb-8">
             {activeView === 'hacker'
-              ? "Now that you understand our VC-style evaluation framework, select your track and start building a venture that institutional investors would fund."
+              ? "Now that you understand our VC-style evaluation framework, start building a venture that institutional investors would fund."
               : "Apply to be a judge and gain real-world experience evaluating early-stage ventures using institutional frameworks."}
           </p>
           {activeView === 'hacker' ? (
-            <Link
-              to="/tracks"
+            <a
+              href={REGISTER_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 hover:from-yellow-500 hover:via-orange-600 hover:to-pink-600 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Explore Competition Tracks
-            </Link>
+              Register to Hack
+            </a>
           ) : (
             <a
               href={REGISTER_FORM_URL}

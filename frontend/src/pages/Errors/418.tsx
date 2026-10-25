@@ -48,13 +48,6 @@ const Teapot = () => {
             </svg>
             <span>Brew Some Code Instead</span>
           </Link>
-
-          <Link
-            to="/tracks"
-            className="inline-flex items-center gap-2 px-8 py-4 border-2 border-teal-500 text-white font-bold rounded-lg hover:bg-teal-500/10 hover:scale-105 transition-all duration-200"
-          >
-            <span>View Tracks</span>
-          </Link>
         </div>
 
         {/* Fun facts about 418 */}

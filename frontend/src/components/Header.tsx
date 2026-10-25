@@ -1,7 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import logo from "../assets/HackBelfast_logo.png";
-import { REGISTER_FORM_URL } from "../constants/register";
 
 const Header = () => {
   const location = useLocation();
@@ -21,10 +20,9 @@ const Header = () => {
     location.pathname === "/auth";
   const sectionItems = [
     { to: "/#home", label: "Home" },
-    { to: "/#tracks", label: "Tracks" },
+    { to: "/#about", label: "About" },
     { to: "/#sponsors", label: "Sponsors" },
     { to: "/#faq", label: "FAQ" },
-    { to: "/#team", label: "Team" },
   ];
 
   return (
@@ -32,8 +30,8 @@ const Header = () => {
       <div
         className={`mx-auto flex items-center justify-between px-4 py-3 transition-all duration-500 outline-none border ${
           isScrolled
-            ? "w-3/4 rounded-2xl border-zinc-700/30 bg-zinc-950/40 backdrop-blur-xl shadow-2xl my-4 mx-auto md:py-4"
-            : "w-full border-transparent bg-[linear-gradient(to_bottom,rgba(9,9,11,0.95)_0%,rgba(9,9,11,0.88)_52%,rgba(9,9,11,0.35)_82%,rgba(9,9,11,0)_100%),radial-gradient(ellipse_at_center,rgba(9,9,11,0.92)_0%,rgba(9,9,11,0.75)_62%,rgba(9,9,11,0)_100%)] md:py-4"
+            ? "w-3/4 rounded-2xl border-white/10 bg-[#191919]/70 backdrop-blur-xl shadow-2xl my-4 mx-auto md:py-4"
+            : "w-full border-transparent bg-[#191919] md:py-4"
         }`}
       >
         <NavLink to="/" className="flex items-center gap-3 flex-shrink-0">
@@ -66,25 +64,6 @@ const Header = () => {
           </nav>
         )}
 
-        <div className="flex items-center gap-2 md:gap-4">
-          <a
-            href={REGISTER_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:inline-block rounded-lg bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 px-4 py-2 text-base font-semibold text-zinc-950 transition hover:from-orange-200 hover:via-pink-200 hover:to-violet-200"
-          >
-            Register
-          </a>
-
-          <a
-            href={REGISTER_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex md:hidden items-center justify-center rounded-lg bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 px-4 py-2 text-base font-semibold text-zinc-950 transition hover:from-orange-200 hover:via-pink-200 hover:to-violet-200"
-          >
-            Register
-          </a>
-        </div>
       </div>
     </header>
   );

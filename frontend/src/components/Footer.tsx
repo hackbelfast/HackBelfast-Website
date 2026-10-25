@@ -1,10 +1,8 @@
-import { REGISTER_FORM_URL } from "../constants/register";
-
 const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative z-20 mt-20 border-t border-zinc-700 bg-zinc-950">
+    <footer className="relative z-20 mt-20 border-t border-white/10 bg-[#191919]">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-12 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
           <h3 className="mb-4 text-xl font-semibold text-zinc-100">
@@ -21,16 +19,6 @@ const Footer = () => {
             Quick Links
           </h4>
           <ul className="space-y-2 text-sm text-zinc-400">
-            <li>
-            <a
-              href={REGISTER_FORM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition hover:text-zinc-100"
-            >
-                Register
-              </a>
-            </li>
             <li>
               <a
                 href="https://calendly.com/ahmednazzal1710/30min"
@@ -85,7 +73,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="border-t border-zinc-800 py-6 text-center text-sm text-zinc-500">
+      <div className="border-t border-white/10 py-6 text-center text-sm text-zinc-500">
         &copy; {year} HackBelfast. All rights reserved.
       </div>
     </footer>

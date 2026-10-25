@@ -19,7 +19,7 @@ export default function Layout() {
 
   return (
     <>
-      <ReactiveBackground />
+      {location.pathname !== "/" && <ReactiveBackground />}
       <Header />
       <main className="pt-20 relative z-10">
         <Outlet />

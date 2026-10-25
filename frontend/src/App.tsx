@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from "./pages/About/About"
 import Layout from "./components/Layout"
 import Landing from './pages/Landing/Landing'
-import Tracks from './pages/Tracks/Tracks'
 import Judging from './pages/Judging/Judging'
 import CodeOfConduct from './pages/CodeOfConduct/CodeOfConduct'
 
@@ -20,7 +19,6 @@ export default function App() {
             <Route path="/" element={<Layout />}>
               <Route index element={<Landing />} />
               <Route path='about' element={<About />} />
-              <Route path='tracks' element={<Tracks />} />
               <Route path='judging' element={<Judging />} />
               <Route path='code-of-conduct' element={<CodeOfConduct />} />
               <Route path='register' element={<RegisterClosed />} />

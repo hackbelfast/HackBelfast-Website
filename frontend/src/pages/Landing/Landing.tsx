@@ -1,74 +1,14 @@
 import { isValidElement } from "react";
-import TrackCard from "./components/Tracks";
 import FAQs from "./components/FAQ";
-import CountdownTimer from "./components/Countdown";
+import About from "./components/About";
+import BelfastMark from "./components/BelfastMark";
 import * as Images from "./assets";
-import { REGISTER_FORM_URL } from "../../constants/register";
+import topography from "../../assets/belfast-topography.jpg";
+import { JOIN_TEAM_URL } from "../../constants/register";
+
+const SPONSOR_URL = "https://calendly.com/ahmednazzal1710/30min";
 
 const Landing = () => {
-  const tracks = [
-    {
-      icon: (
-        <svg
-          className="h-10 w-10 text-purple-700"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M13 10V3L4 14h7v7l9-11h-7z"
-          />
-        </svg>
-      ),
-      title: "Builder",
-      description:
-        "For technical teams building software-first products with code. Builder teams are expected to design a working MVP, implement core logic, and demonstrate technical depth through architecture, execution quality, and product thinking. Strong submissions typically combine reliable engineering with clear user value and a credible path to real-world deployment.",
-    },
-    {
-      icon: (
-        <svg
-          className="h-10 w-10 text-purple-700"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-          />
-        </svg>
-      ),
-      title: "Non-Builder",
-      description:
-        "For participants with limited coding experience who still want to build and ship strong solutions. Teams can use tools like Lovable and other low-code/no-code platforms to prototype quickly, validate ideas, and present a functional product without deep engineering overhead. Judging focuses on problem clarity, usability, creativity, and practical impact rather than raw code complexity.",
-    },
-    {
-      icon: (
-        <svg
-          className="h-10 w-10 text-purple-700"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      ),
-      title: "Quant",
-      description:
-        "Virtu Financial’s modelling challenge is designed for anyone who loves digging into data and thinking creatively under pressure. Competitors will analyse datasets and develop innovative solutions. It’s less about what you know, and more about how you think.",
-    },
-  ];
-
   const sponsors = [
     {
       name: "Patch",
@@ -158,212 +98,71 @@ const Landing = () => {
     },
   ];
 
-  const team = [
-    {
-      name: "Ahmed Nazzal",
-      role: "Lead Organiser",
-      image: Images.Nazzal,
-      linkedin: "https://www.linkedin.com/in/a-nazzal/",
-    },
-    {
-      name: "Caitlin O'Neill",
-      role: "Logistics Lead",
-      image: Images.Catlin,
-      linkedin:
-        "https://www.linkedin.com/in/caitlin-o%E2%80%99neill-83baa229b/",
-    },
-    {
-      name: "Abdul Desissa",
-      role: "Marketing Lead",
-      image: Images.Abdul,
-      linkedin: "https://www.linkedin.com/in/abdulrahman-desissa-615b2a225/",
-    },
-    {
-      name: "Oisin McAlinden",
-      role: "Head of Partnership and Finance",
-      image: Images.OisinImg,
-      linkedin: "https://www.linkedin.com/in/oisin-mcalinden-3b6a8a2a4/",
-    },
-    {
-      name: "Su Jean Ng",
-      role: "Non-Builder Track Lead",
-      image: Images.SuJeanNg,
-      linkedin: "https://www.linkedin.com/in/sjeann/",
-    },
-    {
-      name: "Tim Chan",
-      role: "Advisor",
-      image: Images.TimChan,
-      linkedin: "https://www.linkedin.com/in/chuntimchan/",
-    },
-    {
-      name: "Raj Aryan Upadhyaya",
-      role: "Advisor",
-      image: Images.Raj,
-      linkedin: "https://www.linkedin.com/in/raupadhyaya04/",
-    },
-    {
-      name: "Oliver Billing",
-      role: "Quant Track Head",
-      image: Images.OlliverBilling,
-      linkedin: "https://www.linkedin.com/in/oliver-billing49161205/",
-    },
-    {
-      name: "Kyan Cassidy",
-      role: "Quant Track Head",
-      image: Images.KyanCassidy,
-      linkedin: "https://www.linkedin.com/in/kyan-cassidy/",
-    },
-    {
-      name: "Mayukh Banerjee",
-      role: "Logistics",
-      image: Images.Mayukh,
-      linkedin: "https://www.linkedin.com/in/baneerjem/",
-    },
-    {
-      name: "Christy Chovalloor",
-      role: "Logistics",
-      image: Images.Christy,
-      linkedin: "https://www.linkedin.com/in/cchovalloor/",
-    },
-    {
-      name: "Catherine Kane",
-      role: "Logistics",
-      image: Images.Catherine,
-      linkedin: "https://www.linkedin.com/in/catherine-kane-90bb82238/",
-    },
-    {
-      name: "Grace Coyle",
-      role: "Logistics",
-      image: Images.Grace,
-      linkedin: "https://www.linkedin.com/in/grace-coyle-671718270/",
-    },
-    {
-      name: "Lonan Rooney",
-      role: "Operations",
-      image: Images.Lonan,
-      linkedin: "https://www.linkedin.com/in/lonan-rooney-583485330/",
-    },
-    {
-      name: "Kristaps Paeglis",
-      role: "Social Media / Marketing",
-      image: Images.Kristaps,
-      linkedin: "https://www.linkedin.com/in/kristaps-paeglis/",
-    },
-  ];
-
   return (
     <div className="relative isolate min-h-screen text-zinc-100 bg-transparent">
-      <section id="home" className="relative isolate w-full overflow-hidden">
-        <div className="mx-auto flex min-h-[680px] max-w-7xl items-center px-4 pt-20 pb-16 lg:min-h-[780px] lg:pt-24 lg:pb-20">
-          <div className="relative z-10 grid w-full gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-            <div>
-              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-zinc-300 md:text-base">
-                25-26th April 2026 | Queen's University Belfast
-                <br />
-                Computer Science Building | 16A Malone Rd
-              </p>
-              <h1 className="text-5xl font-semibold uppercase leading-[0.94] md:text-7xl lg:text-8xl">
-                Build hard.
-                <br />
-                Ship real.
-                <br />
-                Win{" "}
-                <span className="bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 bg-clip-text text-transparent">
-                  Belfast.
-                </span>
-              </h1>
-              <p className="mt-7 max-w-xl border-l-2 border-zinc-600 pl-4 text-base text-zinc-300 md:text-lg">
-                HackBelfast is Northern Ireland's largest student-led hackathon,
-                bringing together 175+ students from universities across Ireland
-                for a high-energy 24-hour innovation sprint to tackle real-world
-                challenges.
-              </p>
-              <div className="mt-12 flex flex-wrap gap-4">
-                <a
-                  href={REGISTER_FORM_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary px-8 py-3"
-                >
-                  Register
-                </a>
-                <a
-                  href="https://calendly.com/ahmednazzal1710/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-secondary px-8 py-3"
-                >
-                  Sponsor
-                </a>
-              </div>
-            </div>
-            <div className="bg-zinc-950 p-6 md:p-8 rounded-2xl border border-zinc-800">
-              <CountdownTimer />
-            </div>
+      <section
+        id="home"
+        className="relative isolate flex min-h-[calc(100vh-5rem)] items-center overflow-hidden bg-[#191919] text-white"
+      >
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-[position:65%_center] opacity-30 mix-blend-screen"
+          style={{ backgroundImage: `url(${topography})` }}
+        />
+
+        {/* Crosshair pinned on Belfast */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 hidden md:block"
+        >
+          <div className="absolute inset-y-0 left-[71%] w-px bg-white/25" />
+          <div className="absolute inset-x-0 top-[73%] h-px bg-white/25" />
+          <div className="absolute left-[71%] top-[73%] h-5 w-5 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-[#F89F2F] via-[#E03FAE] to-[#6E2BC8]" />
+          <p className="absolute left-[calc(71%+1.5rem)] top-[calc(73%+0.75rem)] font-mono text-xs tracking-wide text-white/40 lg:text-sm">
+            X: 5.9301° · Y: 54.5973°
+          </p>
+        </div>
+
+        <div className="w-full px-4 py-24 sm:px-[7.25vw]">
+          <h1 className="whitespace-nowrap font-wordmark text-[clamp(2.5rem,12.5vw,15rem)] font-bold leading-none tracking-[-0.02em] md:text-[clamp(2.5rem,11.25vw,15rem)]">
+            HackBelfast
+            <BelfastMark className="ml-[0.08em] inline-block h-[1em] w-[1.08em] align-[-0.15em]" />
+          </h1>
+          <div className="mt-14 flex flex-col gap-5 sm:flex-row sm:gap-[3vw] md:mt-[5vw]">
+            <a
+              href={JOIN_TEAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center gap-3 rounded-lg border-[3px] border-transparent [background-origin:border-box] bg-gradient-to-r from-orange-300 via-pink-300 to-violet-300 px-8 py-5 font-display text-lg font-semibold text-zinc-950 transition hover:from-orange-200 hover:via-pink-200 hover:to-violet-200 sm:w-[min(23vw,28rem)] sm:min-w-[14rem] md:py-[1.6vw] md:text-[clamp(1.125rem,1.6vw,2rem)]"
+            >
+              Join the team
+              <span
+                aria-hidden="true"
+                className="transition-transform duration-300 group-hover:translate-x-1.5"
+              >
+                →
+              </span>
+            </a>
+            <a
+              href={SPONSOR_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-lg border-[3px] border-white bg-transparent px-8 py-5 font-display text-lg font-semibold text-white transition hover:bg-white hover:text-black sm:w-[min(23vw,28rem)] sm:min-w-[14rem] md:py-[1.6vw] md:text-[clamp(1.125rem,1.6vw,2rem)]"
+            >
+              Sponsor
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Why HackBelfast section disabled for now
-      <section className="w-full border-y border-zinc-800 bg-zinc-900 py-10 lg:py-12">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <h2 className="text-3xl font-semibold uppercase tracking-wide md:text-4xl">
-            Why HackBelfast
-          </h2>
-          <div className="mt-6 space-y-6">
-            <div className="border-l-2 border-zinc-700 pl-4">
-              <p className="max-w-4xl text-zinc-300">
-                HackBelfast is built to connect ambitious student teams with
-                real commercial feedback. You get a focused weekend to build,
-                pitch, and prove execution quality in front of judges and
-                partners.
-              </p>
-            </div>
-            <div className="grid gap-3 md:grid-cols-3">
-              {sideStats.map((stat) => (
-                <div key={stat.label} className="border border-zinc-800 bg-zinc-950 p-5">
-                  <p className="text-xs uppercase tracking-[0.12em] text-zinc-500">
-                    {stat.label}
-                  </p>
-                  <p className="mt-2 text-4xl font-semibold">{stat.value}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-      */}
-
-      <section id="tracks" className="mt-32 w-full py-10 lg:mt-40 lg:py-12">
-        <div className="relative z-20 mx-auto w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm">
-          <div className="mb-8 flex items-end justify-between gap-6 md:mb-10">
-            <div>
-              <h2 className="text-3xl font-semibold uppercase tracking-wide md:text-4xl">
-                Competition Tracks
-              </h2>
-              <p className="mt-3 max-w-3xl text-zinc-400">
-                Choose Builder, Non-Builder, or Finance. Each major track
-                includes sub-track prizes like Best Medicine Solution, Best
-                Sustainability Solution, and other category awards.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 md:gap-8 xl:grid-cols-3 xl:gap-10">
-            {tracks.map((track, index) => (
-              <TrackCard key={index} {...track} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <About />
 
       <section
         id="sponsors"
         className="relative w-full py-14 lg:py-20 flex items-center justify-center bg-transparent"
       >
         <div className="pointer-events-none absolute inset-0 -z-10 bg-transparent" />
-        <div className="relative z-20 mx-auto w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm">
+        <div className="relative z-20 mx-auto w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 rounded-2xl border border-white/10 bg-[#202020]">
           <h2 className="text-3xl font-semibold uppercase tracking-wide md:text-4xl">
             Sponsors
           </h2>
@@ -397,82 +196,6 @@ const Landing = () => {
       </section>
 
       <FAQs />
-
-      <section
-        id="team"
-        className="relative z-20 mx-auto mt-6 w-full lg:w-[65%] px-4 md:px-8 py-8 md:py-12 pb-6 rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm"
-      >
-        <h2 className="text-center text-3xl font-semibold uppercase tracking-wide md:text-4xl">
-          Organising Team
-        </h2>
-        <div className="mt-8 grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4">
-          {team.map((member) => (
-            <article
-              key={member.name}
-              className="overflow-hidden border border-zinc-800 bg-zinc-950"
-            >
-              <div className="aspect-square bg-zinc-950">
-                {member.image ? (
-                  member.linkedin ? (
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`${member.name} LinkedIn profile`}
-                    >
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        className="h-full w-full object-cover"
-                        style={
-                          member.name === "Kyan Cassidy"
-                            ? { objectPosition: "50% 42%" }
-                            : undefined
-                        }
-                      />
-                    </a>
-                  ) : (
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="h-full w-full object-cover"
-                      style={
-                        member.name === "Kyan Cassidy"
-                          ? { objectPosition: "50% 42%" }
-                          : undefined
-                      }
-                    />
-                  )
-                ) : (
-                  <div className="flex h-full items-center justify-center text-5xl font-semibold text-zinc-700">
-                    {member.name
-                      .split(" ")
-                      .map((part) => part[0])
-                      .join("")}
-                  </div>
-                )}
-              </div>
-              <div className="p-5">
-                <p className="font-semibold">
-                  {member.linkedin ? (
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="transition hover:text-zinc-100"
-                    >
-                      {member.name}
-                    </a>
-                  ) : (
-                    member.name
-                  )}
-                </p>
-                <p className="text-sm text-zinc-500">{member.role}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
     </div>
   );
 };

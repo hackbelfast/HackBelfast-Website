@@ -12,18 +12,12 @@ const FAQ = () => {
     {
       question: "Do I need to know how to code?",
       answer:
-        "Nope! We've got a special prize for 'Best Use of No-Code Tools' - you can compete in any track using platforms like Lovable, Bubble, or Webflow. That said, if you want to code, go for it! We welcome everyone from complete beginners to seasoned devs.",
+        "Nope! We've got a special prize for 'Best Use of No-Code Tools' - you can compete using platforms like Lovable, Bubble, or Webflow. That said, if you want to code, go for it! We welcome everyone from complete beginners to seasoned devs.",
     },
     {
       question: "How long is the hackathon?",
       answer:
-        "The hackathon runs for 24-36 hours from 25-26th April 2026, starting at 10:00 AM. You'll have the whole time to build, iterate, and polish your project before the final presentations and judging rounds.",
-    },
-    {
-      question:
-        "What are these tracks and do I need to be studying that to compete?",
-      answer:
-        "Hell no! The tracks (Builder, Non-Builder, Quant) are just lanes to help you focus. You don't need a specific background to participate; pick what excites you most, and we'll have mentors and resources to help you build. Challenges will be tailored to each track, with examples like Best Sustainability Solution, Best Cybersecurity Implementation, or Best AI Integration. These are just examples; the actual prize categories will be determined and shared on the day of the hackathon.",
+        "The hackathon runs for 24-36 hours. Dates for HackBelfast 2027 will be announced soon. You'll have the whole time to build, iterate, and polish your project before the final presentations and judging rounds.",
     },
     {
       question: "Who can participate?",
@@ -33,7 +27,7 @@ const FAQ = () => {
     {
       question: "What's the overall format?",
       answer:
-        "Here's the flow: registration and team formation at the start, then you've got 24-36 hours to build your solution. We'll have mentors available throughout, plus workshops and resources. At the end, teams pitch to judges using a structured scoring framework that evaluates technical execution and business viability. Winners are announced across each track plus special prizes.",
+        "Here's the flow: registration and team formation at the start, then you've got 24-36 hours to build your solution. We'll have mentors available throughout, plus workshops and resources. At the end, teams pitch to judges using a structured scoring framework that evaluates technical execution and business viability. Winners are announced across the main prizes plus special prizes.",
     },
   ];
 
@@ -46,7 +40,7 @@ const FAQ = () => {
       id="faq"
       className="bg-transparent px-4 py-24 lg:py-32 flex items-center justify-center"
     >
-      <div className="relative z-20 w-full lg:w-[65%] mx-auto rounded-2xl border border-zinc-800 bg-zinc-900 backdrop-blur-sm p-6 md:p-8">
+      <div className="relative z-20 w-full lg:w-[65%] mx-auto rounded-2xl border border-white/10 bg-[#202020] p-6 md:p-8">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4 border-b border-zinc-800 pb-6">
           <h2 className="text-4xl font-semibold uppercase tracking-wide md:text-5xl">
             FAQ
